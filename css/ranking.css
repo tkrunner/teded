@@ -1,0 +1,53 @@
+
+:root {
+
+  --color-main: #024e0a;
+  --color-background: rgb(214, 214, 214);
+  --color-second: #79AF70;
+  --color-foot: rgb(0, 32, 4);
+  --color-link: #FFC01F;
+
+}
+
+.container-ranking {
+    display: flex;
+    max-width: 1400px;
+    margin: 50px auto 50px auto;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.top5-table thead tr th{
+    font-size: 26px;
+    border-bottom: 2px solid rgb(37, 37, 37);
+  padding: 20px;
+  }
+  
+  .top5-table tbody tr td{
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 2px solid rgb(37, 37, 37);
+    font-weight: 600;
+  }
+
+  .zeanname{
+    text-decoration-line: underline;
+    cursor: pointer;
+  }
+
+  .ranking-header {
+    border-left: 10px solid var(--color-main);
+    padding-left: 10px;
+}
+
+.ranking-table{
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .top5-table{
+    width: 100%;
+    padding: 0px 40px 0px 40px;
+  }
+
+  

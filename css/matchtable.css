@@ -1,0 +1,129 @@
+/* matchtable start*/
+.match-table{
+    padding: 40px 40px 100px 40px;
+}
+
+.icon-link{
+    width: 40px;
+    height: 30px;
+}
+
+.icon-league{
+    width: 20px;
+    height: 30px;
+}
+
+.icon-frag{
+    width: 40px;
+    height: 25px;
+}
+
+.match-header{
+    background-color: var(--color-main);
+    padding:10px 15px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.datepicker-search{
+    width: 50%;
+  display: flex;
+  flex-direction :row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.match-header span{
+    width: 50%;
+}
+
+.league-name{
+    background-color: var(--color-main);
+    display: flex;
+    padding:10px 15px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.league-name p{
+    margin: 0px 15px;
+}
+
+table{
+    width: 100%;
+    background-color: rgb(18, 49, 0);
+}
+.league-match {
+   width: 100%;
+   background-color: var(--color-main);
+   
+}
+.league-match th{
+    background-color: var(--color-main);
+    color: white;
+    padding: 5px 0px;
+    font-size: 12px;
+    border: 1px solid rgb(0, 100, 22);
+    background-image: linear-gradient(180deg,#003806 60%,#002e05 80%,#001d03 100%);
+    border-radius: 4px;
+}
+
+
+
+
+tr:nth-child(even){
+    background-color: var(--color-second);
+
+}  
+tr:nth-child(odd){
+    background-color: var(--color-main);
+    color: white;
+}  
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    table{
+        display: block;
+   overflow: scroll;
+    }
+
+    .match-table{
+        padding: 40px 15px 100px 15px;
+    }
+    .match-header{
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+}
+
+.datepicker-search input{
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.datepicker-search button{
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: white;
+}
+
+.datepicker-search button:hover{
+    background-color: rgb(211, 211, 211);
+    cursor: pointer;
+}
+
+
+
+
+/* matchtable end*/

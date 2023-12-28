@@ -1,0 +1,102 @@
+:root {
+
+    --color-main: #024e0a;
+    --color-background: rgb(214, 214, 214);
+    --color-second: #79AF70;
+    --color-foot: rgb(0, 32, 4);
+    --color-link: #FFC01F;
+
+}
+
+.container-teded {
+    display: flex;
+    max-width: 1400px;
+    margin: 50px auto 50px auto;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+.select-betting {
+    text-align: right;
+}
+
+.select-betting select {
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+.select-betting button {
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: white;
+}
+
+/* table */
+
+.teded-table {
+    margin-top: 20px;
+    width: 100%;
+    overflow: scroll;
+}
+
+.teded-table th {
+    background-color: #0A4700;
+    color: white;
+    padding: 10px 0px 10px 0px;
+}
+
+.teded-table tr td {
+    background-color: #EDEDED;
+    padding: 10px 5px 10px 15px;
+    border: 0px;
+    color: black;
+}
+
+td a {
+    color: black;
+    text-decoration: underline;
+}
+
+td a:hover {
+    color: #0A4700;
+    text-decoration: underline;
+}
+
+.zean-analy {
+    resize: none;
+    border-radius: 10px;
+    border: 0px;
+    background-color: white;
+    padding: 8px;
+    color: #000000;
+}
+
+.bt-purchase {
+    background-color: #ffffff00;
+    border: 3px solid #089216;
+    color: #089216;
+    border-radius: 10px;
+    padding: 3px 20px 3px 20px;
+
+}
+
+.bt-purchase:hover {
+    background-color: #089216;
+    color: white;
+    border: 3px solid #089216;
+}
+
+.bt-purchase.active {
+    background-color: #089216;
+    color: white;
+    border: 3px solid #089216;
+    cursor: auto;
+}
+
+
+/* table */
+
+
+

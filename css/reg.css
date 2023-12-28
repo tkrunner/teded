@@ -1,0 +1,208 @@
+:root {
+
+    --color-main: #024e0a;
+    --color-background: rgb(214, 214, 214);
+    --color-second: #79AF70;
+    --color-foot: rgb(0, 32, 4);
+    --color-link: #FFC01F;
+
+}
+
+/* pricing-card */
+
+.container-pricing-card {
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    margin: auto;
+    max-width: 1400px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 50px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pricing-card-1 {
+    width: 300px;
+    padding: 30px;
+    background: var(--color-second);
+    text-align: center;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px 0px var(--color-second);
+    position: relative;
+    margin: 10px;
+    height: 100%;
+}
+
+.pricing-card-1 .title {
+    font-size: 2rem;
+    color: #000000;
+}
+
+.pricing-card-1 .price {
+    color: #000000;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin: 15px 0;
+}
+
+.pricing-card-1 span {
+    font-size: 1.2rem;
+}
+
+.pricing-card-1 .description {
+    color: #000000;
+    font-size: 1.1rem;
+    margin: 20px 0 20px;
+    
+}
+
+
+.pricing-card-1 .offer {
+    display: block;
+    color: #000000;
+    font-size: 1rem;
+    margin-top: 25px;
+}
+
+
+
+
+
+.pricing-card-2 {
+    width: 300px;
+    padding: 30px;
+    background: var(--color-main);
+    text-align: center;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px 0px var(--color-main);
+    position: relative;
+    margin: 10px;
+    height: 100%
+}
+
+
+.pricing-card-2 .title {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.pricing-card-2 .price {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin: 15px 0;
+}
+
+.pricing-card-2 span {
+    font-size: 1.2rem;
+}
+
+.pricing-card-2 .description {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin: 20px 0 20px;
+}
+
+.pricing-card-2 .offer {
+    display: block;
+    color: #ffffff;
+    font-size: 1rem;
+    margin-top: 25px;
+}
+.ribbon-wrap .ribbon{
+    background-color: rgb(25, 145, 1);
+    font-weight: 600;
+}
+
+
+
+.subscribe-button {
+    display: inline-block;
+    padding: 15px 0;
+    background-color: rgb(25, 145, 1);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    margin-top: 40px;
+    width: 100%;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.subscribe-button:hover {
+    background: rgb(19, 116, 0);
+}
+
+.ribbon-wrap {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    pointer-events: none;
+}
+
+.ribbon {
+    width: 230px;
+    font-size: 0.918rem;
+    text-align: center;
+    padding: 8px 0;
+    background: #FF6B6B;
+    color: #fff;
+    position: absolute;
+    transform: rotate(-45deg);
+    right: -17px;
+    top: 29%;
+}
+
+/* pricing-card */
+
+
+/* formregis */
+.container-regis{
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 50px 0px;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    
+}
+.formregis{
+    padding: 0px 20%;
+    width: 100%;
+}
+
+input[id=uname], input[id=psw],input[id=psw-repeat],input[id=lname],select[id=bank],input[id=banknum],select[id=gender],input[id=email],input[id=phone],input[id=lineid],input[id=birthdate] {
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+    border-radius: 5px;
+    font-family: 'sarabun', sans-serif;
+  }
+
+  button[type=submit]{
+    background-color: #0A4700;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+  @media screen and (max-width: 600px) {
+    .formregis{
+        padding: 0px 50px;
+    }
+  }
+/* formregis */
