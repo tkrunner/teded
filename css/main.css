@@ -50,6 +50,10 @@ body {
         flex-wrap: wrap;
     }
 
+    .container-ranking {
+      flex-wrap: wrap;
+  }
+
     .container-main {
         width: 100%;
         margin: 0px;
