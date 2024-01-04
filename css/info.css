@@ -4,3 +4,136 @@
     margin: 50px auto 50px auto;
     background-color: rgba(0, 0, 0, 0);
 }
+
+.container-main-info {
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 40px;
+    border-top: solid 4px #016204;
+    border-bottom: solid 4px #ffac1a;
+    display: flex;
+}
+
+.profile-logo {
+    width: 150px;
+    height: 150px;
+}
+
+.info {
+    width: 200px;
+    padding: 0px 40px;
+}
+
+.follow-button {
+    border: 2px solid var(--color-main);
+    background-color: rgba(255, 0, 0, 0);
+    padding: 5px 30px;
+    border-radius: 10px;
+    color: #016204;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.follow-button:hover {
+    background-color: var(--color-main);
+    color: white;
+    cursor: pointer;
+}
+
+
+.detail {
+    display: flex;
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 2px solid var(--color-main);
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.zeaninfo-follower {
+    padding: 10px 0px;
+    width: 33%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.zeaninfo-follower p {
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.zeaninfo-bettingtips {
+    padding: 10px 0px;
+    width: 33%;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.zeaninfo-bettingtips p {
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.zeaninfo-profits {
+    padding: 10px 0px;
+    width: 33%;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    color: #16a800;
+}
+
+.zeaninfo-profits p {
+    font-weight: 100;
+    font-size: 16px;
+    color: #000000;
+}
+
+@media screen and (max-width: 600px) {
+    .container-main-info{
+        flex-wrap: wrap;
+    }
+    .profile-logo {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+    }
+    
+    .info {
+        padding: 0px 0px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .detail{
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .zeaninfo-follower {
+font-size: 14px;
+    }
+    
+    .zeaninfo-follower p {
+        font-size: 10px;
+    }
+    
+    .zeaninfo-bettingtips {
+        font-size: 14px;
+    }
+    
+    .zeaninfo-bettingtips p {
+        font-size: 10px;
+    }
+    
+    .zeaninfo-profits {
+        font-size: 14px;
+    }
+    
+    .zeaninfo-profits p {
+        font-size: 10px;
+    }
+}

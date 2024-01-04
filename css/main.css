@@ -48,11 +48,18 @@ body {
 @media screen and (max-width: 600px) {
     .container-teded {
         flex-wrap: wrap;
+        padding: 0px 15px;
     }
 
     .container-ranking {
       flex-wrap: wrap;
+      padding: 0px 15px;
   }
+
+  .container-info {
+    flex-wrap: wrap;
+    padding: 0px 15px;
+}
 
     .container-main {
         width: 100%;
