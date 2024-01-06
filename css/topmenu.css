@@ -1,281 +1,308 @@
-
-
 /* toptap begin*/
-.logo-img{
-    width:300px;
-  }
-  .toptab {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0px auto;
-    padding: 10px 0px;
+.logo-img {
+  width: 300px;
+}
+
+.toptab {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px auto;
+  padding: 10px 0px;
   max-width: 1400px;
   background-color: white;
-  
-  }
-  .bg-toptab{
-    background-color: white;
-  }
-  
+
+}
+
+.bg-toptab {
+  background-color: white;
+}
+
+.toptab-left {
+  width: 50%;
+  align-items: center;
+}
+
+.toptab-right {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+@media screen and (max-width: 600px) {
+
   .toptab-left {
-    width: 50%;
-    align-items: center;
+    width: 100%;
+    text-align: center;
   }
-  
+
   .toptab-right {
-    width: 50%;
     display: flex;
-    flex-direction :row;
-    justify-content: flex-end;
-    align-items: center;
-  
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 5px auto;
+    width: 70%;
   }
-  
-  @media screen and (max-width: 600px) {
-  
-    .toptab-left {
-      width: 100%;
-      text-align: center;
-    }
-  
-    .toptab-right{
-      display: flex;
-      flex-wrap: wrap;
-      text-align: center;
-      margin: 5px auto;
-      width: 70%;
-    }
-    .logo-img{
-      width:80%;
-    }
+
+  .logo-img {
+    width: 80%;
   }
-  
-  
-  
-  /* button begin*/
-  
+}
+
+
+
+/* button begin*/
+
+.login-button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid var(--color-main);
+  border-radius: 20px;
+  padding: 5px 30px 5px 30px;
+  color: var(--color-main);
+  margin: 0px 5px;
+  font-weight: 600;
+}
+
+.login-button:hover {
+  background-color: var(--color-main);
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.regis-button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 5px 30px 5px 30px;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.regis-button:hover {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+.change-lang {
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 5px;
+  display: flex;
+  font-weight: 600;
+}
+
+
+.change-lang-button {
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+  color: white;
+  border: 0px;
+  padding: 2px 10px;
+  text-decoration: none;
+}
+
+.change-lang-button:hover {
+  background-color: var(--color-main);
+  color: white;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 600px) {
   .login-button {
-    background-color: rgba(0, 0, 0, 0);
-    border: 3px solid var(--color-main);
-    border-radius: 20px;
-    padding: 5px 30px 5px 30px;
-    color: var(--color-main);
-    margin: 0px 5px;
-    font-weight: 600;
+    margin: 2px 0px;
+    width: 100%;
   }
-  
-  .login-button:hover{
-    background-color: var(--color-main);
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
+
+  .regis-button {
+    margin: 2px 0px;
+    width: 100%;
   }
-  
-  .regis-button{
-    background-color: rgba(0, 0, 0, 0);
-    border: 3px solid black;
-    border-radius: 20px;
-    padding: 5px 30px 5px 30px;
-    color:black;
-    text-decoration: none;
-    font-weight: 600;
+
+  .change-lang {
+    display: none;
   }
-  .regis-button:hover{
-    background-color: black;
-    color: white;
-    text-decoration: none;
-  }
-  
-  
-  
-  .change-lang{
-    background-color: rgb(0, 0, 0);
-    border-radius: 20px;
-    padding: 5px;
-    display: flex;
-    font-weight: 600;
-  }
-  
-  
-  .change-lang-button{
-    background-color: rgb(0, 0, 0);
-    border-radius: 20px;
-    color:white;
-    border: 0px;
-    padding: 2px 10px;
-    text-decoration: none;
-  }
-  
-  .change-lang-button:hover{
-    background-color: var(--color-main);
-    color: white;
-    text-decoration: none;
-  }
-  
-  
-  @media screen and (max-width: 600px) {
-    .login-button{
-      margin:2px 0px;
-      width: 100%;
-    }
-    .regis-button{
-      margin:2px 0px;
-      width: 100%;
-    }
-    .change-lang{
-      display: none;
-    }
-  
-  
-  }
-  /* button end*/
-  
-  
-  /* login */
+
+
+}
+
+/* button end*/
+
+
+/* login */
 
 /* Full-width input fields */
-input[class=usn-login], input[class=psw-login]{
-    width: 80%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    border-radius: 20px;
-  }
-  
-  
-  /* Set a style for all buttons */
-  button[class=submit-login]{
-    background-color: var(--color-main);
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    width: 80%;
-    font-weight: 600;
-    justify-content: center;
-  }
-  
-  button:hover {
-    opacity: 0.8;
-  }
-  
-  /* Center the image and position the close button */
-  .imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
-  }
-  
-  img.avatar {
-    width: 40%;
-    border-radius: 50%;
-  }
-  
-  .foot-container {
-    padding: 20px;
-    display: flex;
-    border-radius: 0px 0px 20px 20px;
+input[class=usn-login],
+input[class=psw-login] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+
+/* Set a style for all buttons */
+button[class=submit-login] {
+  background-color: var(--color-main);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 80%;
+  font-weight: 600;
+  justify-content: center;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.foot-container {
+  padding: 20px;
+  display: flex;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.login-container {
+  padding: 16px;
+  display: grid;
+  justify-items: center;
+
+}
+
+span.psw {
+  font-size: small;
+}
+
+.psw a {
+  color: rgb(129, 0, 0);
+}
+
+.psw a:hover {
+  color: #0A4700;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 9999;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.63);
+  /* Black w/ opacity */
+  padding-top: 40px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 0% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%;
+  /* Could be more or less, depending on screen size */
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
   }
 
-  .login-container {
-    padding: 16px;
-    display: grid;
-    justify-items: center;
-
+  to {
+    -webkit-transform: scale(1)
   }
-  
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
   span.psw {
-    font-size: small;
+    display: block;
+    float: none;
   }
-  
-  .psw a{
-    color: rgb(129, 0, 0);
+
+  .cancelbtn {
+    width: 100%;
   }
-  .psw a:hover{
-    color: #0A4700;
-  }
-  
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 9999; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.63); /* Black w/ opacity */
-    padding-top: 40px;
-  }
-  
-  /* Modal Content/Box */
+
+
+}
+
+@media screen and (max-width: 600px) {
   .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 0% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 30%; /* Could be more or less, depending on screen size */
-    border-radius: 20px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* The Close Button (x) */
-  .close {
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: red;
-    cursor: pointer;
-  }
-  
-  /* Add Zoom Animation */
-  .animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
-  }
-  
-  @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
-    to {-webkit-transform: scale(1)}
-  }
-    
-  @keyframes animatezoom {
-    from {transform: scale(0)} 
-    to {transform: scale(1)}
-  }
-  
-  /* Change styles for span and cancel button on extra small screens */
-  @media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
-
-    
+    width: 80%;
   }
 
-  @media screen and (max-width: 600px) {
-    .modal-content{
-        width: 80%;
-    }
-    
-  }
-    
-  
-  /* login */
-  
-  /* toptap end*/
+}
+
+
+/* login */
+
+/* toptap end*/

@@ -185,7 +185,7 @@ body {
   .side-creditpack li span.cp-left div.h1 b {
     display: inline-block;
     font-family: 'Sarabun', sans-serif;
-    text-transform: uppercase;
+    text-transform:uppercase;
     font-size: 12px;
     color: #ffffff;
     margin: 0px 0px 0px 5px;
@@ -219,7 +219,7 @@ body {
     text-align: right;
       font-family: 'Sarabun', sans-serif;
     font-size: 22px;
-    text-transform: uppercase;
+    text-transform:uppercase;
     color: #016204;
   }
   .side-creditpack li span.cp-right a {
