@@ -50,26 +50,27 @@
         <a class="login-button" onclick="document.getElementById('login').style.display='block'">LOGIN</a>
 
         <div id="login" class="modal">
-  
+
           <form class="modal-content animate" action="/action_page.php" method="post">
             <div class="imgcontainer">
-              <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <span onclick="document.getElementById('login').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
               <img src="img/img_avatar2.png" alt="" class="avatar">
             </div>
-        
+
             <div class="login-container">
               <label for="uname"><b>Username</b></label>
               <input type="text" class="usn-login" placeholder="Enter Username" name="uname" required>
-        
+
               <label for="psw"><b>Password</b></label>
               <input type="password" class="psw-login" placeholder="Enter Password" name="psw" required>
-                
+
               <button type="submit" class="submit-login">Login</button>
               <label>
                 <input type="checkbox" checked="checked" name="remember"> Remember me
               </label>
             </div>
-        
+
             <div class="foot-container" style="background-color:#f1f1f1">
               <span class="psw">Forgot <a href="#">password?</a></span>
             </div>
@@ -135,20 +136,37 @@
           <div class="zeaninfo-follower">
             <strong>46</strong>
             <p>FOLLOWERS</p>
-        </div>
-        <div class="zeaninfo-bettingtips">
+          </div>
+          <div class="zeaninfo-bettingtips">
             <strong>5818</strong>
             <p>BETTING TIPS</p>
-        </div>
-        <div class="zeaninfo-profits">
+          </div>
+          <div class="zeaninfo-profits">
             <strong>+45547.00</strong>
             <p>PROFITS</p>
-        </div>
+          </div>
         </div>
       </div>
 
+      <h2 class="freeteded-header">TAP</h2>
+      <div class="container-main-info-noflex">
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'Profile')" id="defaultOpen">PROFILE</button>
+          <button class="tablinks" onclick="openCity(event, 'Performance')">PERFORMANCE</button>
+        </div>
+        
+        <div id="Profile" class="tabcontent">
+          <h3>BIO SUMMARY</h3>
+          <p>BIO SUMMARY</p>
+        </div>
+        
+        <div id="Performance" class="tabcontent">
+          <h3>PERFORMANCE</h3>
+          <p>PERFORMANCE</p> 
+        </div>
 
-      
+      </div>
+
 
     </div>
 
@@ -158,68 +176,176 @@
     <div class="container-credit">
       <h2 class="freeteded-header">CREDIT PACK</h2>
       <div class="side-creditpack">
-          <ul>
-              <li>
-                  <span class="cp-left">
-                      <div class="h1">150<b>Credits</b></div>
-                      <div class="h2">Starter </div>
-                  </span>
+        <ul>
+          <li>
+            <span class="cp-left">
+              <div class="h1">150<b>Credits</b></div>
+              <div class="h2">Starter </div>
+            </span>
 
-                  <span class="cp-right">
-                      <p>$150</p>
-                      <a href="#">Purchase Now</a>
-                  </span>
-              </li>
-              <li>
-                  <span class="cp-left">
-                      <div class="h1">500<b>Credits</b></div>
-                      <div class="h2">Professional Kit</div>
-                  </span>
+            <span class="cp-right">
+              <p>$150</p>
+              <a href="#">Purchase Now</a>
+            </span>
+          </li>
+          <li>
+            <span class="cp-left">
+              <div class="h1">500<b>Credits</b></div>
+              <div class="h2">Professional Kit</div>
+            </span>
 
-                  <span class="cp-right">
-                      <p>$500</p>
-                      <a href="#">Purchase Now</a>
-                  </span>
-              </li>
-              <li>
-                  <span class="cp-left">
-                      <div class="h1">1000<b>Credits</b></div>
-                      <div class="h2">Beginner Kit</div>
-                  </span>
+            <span class="cp-right">
+              <p>$500</p>
+              <a href="#">Purchase Now</a>
+            </span>
+          </li>
+          <li>
+            <span class="cp-left">
+              <div class="h1">1000<b>Credits</b></div>
+              <div class="h2">Beginner Kit</div>
+            </span>
 
-                  <span class="cp-right">
-                      <p>$1000</p>
-                      <a href="#">Purchase Now</a>
-                  </span>
-              </li>
-              <li>
-                  <span class="cp-left">
-                      <div class="h1">1500<b>Credits</b></div>
-                      <div class="h2">1500 Credits Pack</div>
-                  </span>
+            <span class="cp-right">
+              <p>$1000</p>
+              <a href="#">Purchase Now</a>
+            </span>
+          </li>
+          <li>
+            <span class="cp-left">
+              <div class="h1">1500<b>Credits</b></div>
+              <div class="h2">1500 Credits Pack</div>
+            </span>
 
-                  <span class="cp-right">
-                      <p>$1500</p>
-                      <a href="#">Purchase Now</a>
-                  </span>
-              </li>
-              <li>
-                  <span class="cp-left">
-                      <div class="h1">3000<b>Credits</b></div>
-                      <div class="h2">High Roller</div>
-                  </span>
+            <span class="cp-right">
+              <p>$1500</p>
+              <a href="#">Purchase Now</a>
+            </span>
+          </li>
+          <li>
+            <span class="cp-left">
+              <div class="h1">3000<b>Credits</b></div>
+              <div class="h2">High Roller</div>
+            </span>
 
-                  <span class="cp-right">
-                      <p>$3000</p>
-                      <a href="#">Purchase Now</a>
-                  </span>
-              </li>
+            <span class="cp-right">
+              <p>$3000</p>
+              <a href="#">Purchase Now</a>
+            </span>
+          </li>
 
-          </ul>
+        </ul>
       </div>
-  </div>
+    </div>
   </div>
 
 
 
   <!-- container-info end-->
+
+
+
+   <!-- footer -->
+   <footer>
+    <div class="footer">
+        <div class="footer-desc">
+            <a href=""><img class="logo-img-footer" src="img/logo.png" alt=""></a>
+            <div>เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zeanเว็บ
+                teded
+                zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean</div>
+        </div>
+
+        <div class="footer-link">
+            <div>
+                <p>USEFUL LINKS</p>
+                <ul>
+                    <li><a href="#">ยูฟ่าเบท</a></li>
+                    <li><a href="#">ยูฟ่าเบท</a></li>
+                    <li><a href="#">ยูฟ่าเบท</a></li>
+                    <li><a href="#">ยูฟ่าเบท</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>Zean</p>
+                <ul>
+                    <li><a href="#">ยูฟ่าเบท</a></li>
+                    <li><a href="#">ยูฟ่าเบท</a></li>
+                    <li><a href="#">ยูฟ่าเบท</a></li>
+                    <li><a href="#">ยูฟ่าเบท</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>OPPORTUNITY</p>
+                <ul>
+                    <li><a href="#">ยูฟ่าเบท</a></li>
+                    <li><a href="#">ยูฟ่าเบท</a></li>
+                    <li><a href="#">ยูฟ่าเบท</a></li>
+                    <li><a href="#">ยูฟ่าเบท</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>TEDED ZEAN</p>
+                <ul>
+                    <li><a href="#">ยูฟ่าเบท</a></li>
+                    <li><a href="#">ยูฟ่าเบท</a></li>
+                    <li><a href="#">ยูฟ่าเบท</a></li>
+                    <li><a href="#">ยูฟ่าเบท</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>CUSTOMER SUPPORT</p>
+                <ul>
+                    <li><a href="#">ยูฟ่าเบท</a></li>
+                    <li><a href="#">ยูฟ่าเบท</a></li>
+                    <li><a href="#">ยูฟ่าเบท</a></li>
+                    <li><a href="#">ยูฟ่าเบท</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</footer>
+<!-- footer -->
+
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+
+    // Get the modal
+    var modal = document.getElementById('login');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+
+    function openCity(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+</body>
+
+</html>

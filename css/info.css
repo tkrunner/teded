@@ -14,6 +14,14 @@
     display: flex;
 }
 
+.container-main-info-noflex {
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 40px;
+    border-top: solid 4px #016204;
+    border-bottom: solid 4px #ffac1a;
+}
+
 .profile-logo {
     width: 150px;
     height: 150px;
@@ -93,47 +101,98 @@
 }
 
 @media screen and (max-width: 600px) {
-    .container-main-info{
+    .container-main-info {
         flex-wrap: wrap;
     }
+
     .profile-logo {
         width: 100px;
         height: 100px;
         margin: auto;
     }
-    
+
     .info {
         padding: 0px 0px;
         margin: auto;
         text-align: center;
     }
 
-    .detail{
+    .detail {
         width: 100%;
         margin: 20px auto;
     }
 
     .zeaninfo-follower {
-font-size: 14px;
+        font-size: 14px;
     }
-    
+
     .zeaninfo-follower p {
         font-size: 10px;
     }
-    
+
     .zeaninfo-bettingtips {
         font-size: 14px;
     }
-    
+
     .zeaninfo-bettingtips p {
         font-size: 10px;
     }
-    
+
     .zeaninfo-profits {
         font-size: 14px;
     }
-    
+
     .zeaninfo-profits p {
         font-size: 10px;
     }
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: var(--color-main);
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+
+.tablinks {
+    color: white;
+    font-weight: 600;
+}
+
+
+.tab button.active {
+    background-color: var(--color-link);
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.tab button:hover {
+    background-color: var(--color-link);
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.tabcontent h3 {
+    font-size: 23px;
+    font-weight: 600;
 }
