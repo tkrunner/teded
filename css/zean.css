@@ -1,0 +1,190 @@
+.container-zean {
+    display: flex;
+    max-width: 1400px;
+    margin: 50px auto 50px auto;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.container-back-left {
+    width: 500px;
+    margin-right: 5px;
+
+}
+
+.container-back-right {
+    width: 900px;
+    margin-left: 5px;
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    .container-back-left {
+        width: 100%;
+    
+    }
+    .container-back-right {
+        width: 100%;
+    
+    }
+    
+}
+
+.container-main-zean {
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 40px 60px;
+    border-top: solid 4px #016204;
+    border-bottom: solid 4px #ffac1a;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 150px;
+}
+
+.container-main-zean h2 {
+    padding-top: 20px;
+    font-weight: 600;
+}
+
+.container-main-zean span {
+    font-size: 18px;
+}
+
+/* follower and credit */
+.creditfollow {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.creditfollowdetail {
+    width: 150px;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.creditfollowdetail svg {
+    padding-top: 0px;
+}
+
+.credit-font span {
+    font-size: 10px;
+}
+
+.credit-font {
+    padding: 10px 5px;
+    font-size: 10px;
+    line-height: 1px;
+}
+
+.credit-font p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* follower and credit */
+
+
+/* tip-win-profit */
+.tip-win-profit {
+    display: flex;
+    justify-content: center;
+}
+
+.tip-win-profit div {
+    padding: 15px 20px 0px 20px;
+    font-weight: 600;
+    line-height: 10px;
+}
+
+.tip-win-profit-detail span {
+    color: #686868;
+
+}
+
+/* tip-win-profit */
+
+/* menuzean */
+
+.menuzean {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icon-menu {
+    width: 33%;
+    font-size: 12px;
+    margin: 0;
+    padding: 10px 0px;
+    text-decoration: none;
+    color: black;
+}
+
+.icon-menu:hover {
+    background-color: rgba(24, 24, 24, 0.247);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.icon-menu.active {
+    background-color: rgba(24, 24, 24, 0.247);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* menuzean */
+
+/* home */
+.container-main-zean textarea[id=biosummary],
+textarea[id=performance] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid rgb(138, 138, 138);
+    border-radius: 10px;
+    resize: none;
+}
+
+.container-main-zean input[type=submit] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #089216;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.runningtips{
+    width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+
+}
+.runningtips thead tr th{
+    background-color: #089216;
+    color: white;
+    font-size: 14px;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+  }
+  
+  .runningtips tbody tr td{
+    padding: 10px 0px 10px 0px;
+    font-size: 14px;
+    border-bottom: 3px solid #D9D9D9;
+    text-align: center;
+    background-color: rgb(238, 238, 238);
+  }
+/* home */
