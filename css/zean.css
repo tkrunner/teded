@@ -3,31 +3,33 @@
     max-width: 1400px;
     margin: 50px auto 50px auto;
     background-color: rgba(0, 0, 0, 0);
+
 }
 
 .container-back-left {
-    width: 500px;
+    width: 400px;
     margin-right: 5px;
 
 }
 
 .container-back-right {
-    width: 900px;
+    width: 1000px;
     margin-left: 5px;
 
 }
 
 @media screen and (max-width: 600px) {
-    
+
     .container-back-left {
         width: 100%;
-    
+
     }
+
     .container-back-right {
         width: 100%;
-    
+
     }
-    
+
 }
 
 .container-main-zean {
@@ -38,6 +40,7 @@
     border-bottom: solid 4px #ffac1a;
     text-align: center;
     margin-bottom: 30px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .profile-img {
@@ -61,16 +64,17 @@
 }
 
 .creditfollowdetail {
-    width: 150px;
+    width: 130px;
     justify-content: center;
-    padding: 0px 0px 0px 0px;
+    padding: 5px 0px 5px 0px;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .creditfollowdetail svg {
-    padding-top: 0px;
+    padding-top: 5px;
+    width: 30px;
+    height: 30px;
 }
 
 .credit-font span {
@@ -121,9 +125,9 @@
 }
 
 .icon-menu {
-    width: 33%;
+    width: 32%;
     font-size: 12px;
-    margin: 0;
+    margin: 1px 1px;
     padding: 10px 0px;
     text-decoration: none;
     color: black;
@@ -133,11 +137,18 @@
     background-color: rgba(24, 24, 24, 0.247);
     border-radius: 20px;
     cursor: pointer;
+
 }
+
 .icon-menu.active {
     background-color: rgba(24, 24, 24, 0.247);
     border-radius: 20px;
     cursor: pointer;
+}
+
+.icon-menu svg {
+    width: 20px;
+    height: 20px;
 }
 
 /* menuzean */
@@ -166,25 +177,348 @@ textarea[id=performance] {
     border-radius: 10px;
     cursor: pointer;
 }
-.runningtips{
+
+.runningtips {
     width: 100%;
-  border-collapse: collapse;
-  margin: 0;
+    border-collapse: collapse;
+    margin: 0;
 
 }
-.runningtips thead tr th{
+
+.runningtips thead tr th {
     background-color: #089216;
     color: white;
     font-size: 14px;
     padding: 10px 0px 10px 0px;
     text-align: center;
-  }
-  
-  .runningtips tbody tr td{
+}
+
+.runningtips tbody tr td {
     padding: 10px 0px 10px 0px;
     font-size: 14px;
     border-bottom: 3px solid #D9D9D9;
     text-align: center;
     background-color: rgb(238, 238, 238);
-  }
+}
+
 /* home */
+
+
+/* profile */
+.formprofile input[id=name],
+.formprofile input[id=birthdate],
+.formprofile input[id=email],
+.formprofile input[id=phone],
+.formprofile input[id=lineid],
+.formprofile input[id=lastname],
+.formprofile input[id=avatar],
+.formprofile input[id=old-psw],
+.formprofile input[id=psw-new],
+.formprofile input[id=psw-repeat] {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: flex;
+    border: 1px solid #ccc;
+}
+
+select[id=gender] {
+    width: 65%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: flex;
+    border: 1px solid #ccc;
+}
+
+.formprofile {
+    display: flex;
+    width: 90%;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.formprofile label {
+    width: 30%;
+    display: flex;
+
+}
+
+.save-profile {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    border-radius: 20px;
+    border: 1px solid var(--color-main);
+    color: white;
+    font-weight: 600;
+    background-color: var(--color-main);
+    cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .save-profile {
+        width: 100%;
+    }
+
+    .formprofile label {
+        width: 100%;
+        display: flex;
+
+    }
+
+    .formprofile input[id=name],
+    .formprofile input[id=birthdate],
+    .formprofile input[id=email],
+    .formprofile input[id=phone],
+    .formprofile input[id=lineid],
+    .formprofile input[id=lastname],
+    .formprofile input[id=avatar],
+    .formprofile input[id=old-psw],
+    .formprofile input[id=psw-new],
+    .formprofile input[id=psw-repeat] {
+        width: 100%;
+    }
+
+    .formprofile select[id=gender] {
+        width: 100%
+    }
+}
+
+/* profile */
+
+
+/* teded */
+.formteded{
+    display: flex;
+    width: 700px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.formteded label {
+    width: 30%;
+    display: flex;
+
+}
+
+.formteded input[id=bettingprice],.formteded input[id=oddprice],.formteded input[id=price],.formteded textarea[id=analytic]{
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: flex;
+    border: 1px solid #ccc;
+    resize: none;
+}
+.formteded select[id=team1],.formteded select[id=team2],.formteded select[id=bettingtype]{
+    width: 65%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: flex;
+    border: 1px solid #ccc;
+}
+@media screen and (max-width: 600px) {
+    .formteded{
+        width: 100%;
+    }
+    .formteded label {
+        width: 100%;
+        display: flex;
+
+    }
+    .formteded input[id=bettingprice],.formteded input[id=oddprice],.formteded input[id=price],.formteded textarea[id=analytic]{
+        width: 100%;
+    }
+    .formteded select[id=team1],.formteded select[id=team2],.formteded select[id=bettingtype]{
+        width: 100%;
+    }
+
+}
+
+
+/* teded */
+
+
+
+
+/* teded history */
+
+.datepicker-search{
+  display: flex;
+  flex-direction :row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.datepicker-search input{
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.datepicker-search button{
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: white;
+}
+
+.datepicker-search button:hover{
+    background-color: rgb(211, 211, 211);
+    cursor: pointer;
+}
+
+.teded-history-table{
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+.teded-history-table th{
+    background-color: #0A4700;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    font-size: 13px;
+  }
+  
+  .teded-history-table td{
+    background-color: #EDEDED;
+    padding: 5px 0px 5px 0px;
+    border: 0px;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+  .teded-history-table td textarea{
+    resize: none;
+    width: 150px;
+    margin: 0;
+  }
+  @media screen and (max-width: 600px) {
+    .teded-history-table{
+        display: block;
+        overflow: scroll;
+    }
+
+
+  }
+
+/* teded history */
+
+/* withdraw history */
+.withdraw-history-table{
+    margin-top: 5px;
+    width: 100%;
+    border-collapse: collapse;
+}
+.withdraw-history-table th{
+    background-color: #0A4700;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    font-size: 16px;
+    width: 33%;
+  }
+  
+  .withdraw-history-table td{
+    background-color: #EDEDED;
+    padding: 10px 0px 10px 0px;
+    border: 0px;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+
+
+/* withdraw history */
+
+/* predict history */
+.predict-history-table{
+    margin-top: 5px;
+    width: 100%;
+    border-collapse: collapse;
+}
+.predict-history-table th{
+    background-color: #0A4700;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    font-size: 16px;
+  }
+  
+  .predict-history-table td{
+    background-color: #EDEDED;
+    padding: 10px 5px 10px 5px;
+    border: 0px;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+  .predict-history-table td textarea{
+    resize: none;
+    width: 150px;
+    margin: 0;
+  }
+
+/* predict history */
+
+/* withdraw */
+.withdraw-form{
+    display: flex;
+    width: 600px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.withdraw-form label {
+    width: 30%;
+    display: flex;
+}
+.withdraw-form input[id=name],.withdraw-form input[id=lastname]{
+    width: 15%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    background-color: white;
+    border: none;
+}
+.withdraw-form input[id=bank]{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    background-color: white;
+    border: none;
+}
+.withdraw-form input[id=banknum]{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    background-color: white;
+    border: none;
+}
+.withdraw-form input[id=credit]{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    background-color: white;
+    border-radius: 20px;
+}
+.submit-withdraw{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    border-radius: 20px;
+    border: 1px solid var(--color-main);
+    color: white;
+    font-weight: 600;
+    background-color: var(--color-main);
+    cursor: pointer;
+}
+
+
+/* withdraw */

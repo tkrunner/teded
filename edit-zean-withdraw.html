@@ -141,7 +141,7 @@
                 <hr>
                 <div class="menuzean">
 
-                    <a href="edit-zean-home.html" class="icon-menu active">
+                    <a href="edit-zean-home.html" class="icon-menu">
                         <svg xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
                             <path
@@ -190,7 +190,7 @@
                         </svg>
                         <p>ประวัติทายผล</p>
                     </a>
-                    <a href="edit-zean-withdraw.html" class="icon-menu">
+                    <a href="edit-zean-withdraw.html" class="icon-menu  active">
                         <svg xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
                             <path fill="#000000"
@@ -219,74 +219,27 @@
 
         <!-- right -->
         <div class="container-back-right">
-            <h2 class="freeteded-header">หน้าแรก</h2>
+            <h2 class="freeteded-header">แจ้งถอน</h2>
             <div class="container-main-zean">
-                <h1>PROFILE</h1>
-                <div class="tab">
-                    <button class="tablinks" onclick="openTab(event, 'Profile')" id="defaultOpen">PROFILE</button>
-                    <button class="tablinks" onclick="openTab(event, 'Performance')">PERFORMANCE</button>
-                </div>
-                <form action="/action_page.php">
-                    <div id="Profile" class="tabcontent">
-                        <h3>BIO SUMMARY</h3>
-                        <textarea id="biosummary" name="biosummary" rows="4"
-                            cols="50">I'm a mathematician and a retired professor. For the past 3 years, I have been using more sophisticated analysis to predict results based on every data I can acquire. I am writing a book now on betting theory and I believe every football games can be predicted with AI if we have enough data on hands. My analysis have been very accurate, and I have been selling them to support my researches.</textarea>
+                <h1>แจ้งถอน</h1>
+                <form class="withdraw-form" action="">
 
-                    </div>
+                    <label for="name"><b>NAME : </b></label>
+                    <input disabled type="text" name="name" id="name" value="FREDRIK"><input disabled type="text" name="lastname" id="lastname" value="KNUDSEN">
 
-                    <div id="Performance" class="tabcontent">
-                        <h3>PERFORMANCE</h3>
-                        <textarea id="performance" name="performance" rows="4"
-                            cols="50">I'm a mathematician and a retired professor. For the past 3 years, I have been using more sophisticated analysis to predict results based on every data I can acquire. I am writing a book now on betting theory and I believe every football games can be predicted with AI if we have enough data on hands. My analysis have been very accurate, and I have been selling them to support my researches.</textarea>
-                    </div>
-                    <input type="submit" value="SAVE">
+                    <label for="name"><b>ชื่อธนาคาร : </b></label>
+                    <input disabled type="text" name="bank" id="bank" value="ธนาคารไทยพาณิชย์">
+
+                    <label for="name"><b>เลขบัญชี : </b></label>
+                    <input disabled type="text" name="banknum" id="banknum" value="1231241245565">
+
+                    <label for="credit"><b>ยอดเงินที่ต้องการถอน : </b></label>
+                    <input type="number" placeholder="" name="credit" id="credit" required>
+
+                    <button type="submit" class="submit-withdraw">Confirm</button>
+
                 </form>
-            </div>
-            <div class="container-main-zean">
-                <h1>RUNNING TIPS</h1>
-                <table class="runningtips">
-                    <thead>
-                        <tr>
-                            <th>DATE</th>
-                            <th>EVENT</th>
-                            <th>BETTING TYPE</th>
-                            <th>RESULT</th>
-                            <th>ANALYTIC</th>
-                            <th>EDIT</th>
-                            <th>DELETE</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <strong>21.11.23</strong><br>20:45
-                            </td>
-                            <td>
-                                <strong>Radcliffe - Whitby</strong><br>England 7-Northern Premier Division
-                            </td>
-                            <td>Total goal <br> FullTime</td>
-                            <td>07:25:55 <br> Until Kick Off</td>
-                            <td><textarea disabled class="zeananalyticta" name="" id="" cols="15"
-                                    rows="2">ฟันธงรองชรูว์สบิวรี่ ขี่ได้ แน่นอนค้าบบบบบบบบบบบบบบ</textarea></td>
-                            <td><button>EDIT</button></td>
-                            <td><button>DELETE</button></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <strong>21.11.23</strong><br>20:45
-                            </td>
-                            <td>
-                                <strong>Radcliffe - Whitby</strong><br>England 7-Northern Premier Division
-                            </td>
-                            <td>Total goal <br> FullTime</td>
-                            <td>07:25:55 <br> Until Kick Off</td>
-                            <td><textarea disabled class="zeananalyticta" name="" id="" cols="15"
-                                    rows="2">ฟันธงรองชรูว์สบิวรี่ ขี่ได้ แน่นอน</textarea></td>
-                            <td><button>EDIT</button></td>
-                            <td><button>DELETE</button></td>
-                        </tr>
-                    </tbody>
-                </table>
+
             </div>
 
         </div>

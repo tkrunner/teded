@@ -141,7 +141,7 @@
                 <hr>
                 <div class="menuzean">
 
-                    <a href="edit-zean-home.html" class="icon-menu active">
+                    <a href="edit-zean-home.html" class="icon-menu">
                         <svg xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
                             <path
@@ -166,7 +166,7 @@
                         </svg>
                         <p>ลงทีเด็ด</p>
                     </a>
-                    <a href="edit-zean-teded-history.html" class="icon-menu">
+                    <a href="edit-zean-teded-history.html" class="icon-menu  active">
                         <svg xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
                             <path fill="#000000"
@@ -219,74 +219,142 @@
 
         <!-- right -->
         <div class="container-back-right">
-            <h2 class="freeteded-header">หน้าแรก</h2>
+            <h2 class="freeteded-header">ประวัติทีเด็ด</h2>
             <div class="container-main-zean">
-                <h1>PROFILE</h1>
-                <div class="tab">
-                    <button class="tablinks" onclick="openTab(event, 'Profile')" id="defaultOpen">PROFILE</button>
-                    <button class="tablinks" onclick="openTab(event, 'Performance')">PERFORMANCE</button>
-                </div>
-                <form action="/action_page.php">
-                    <div id="Profile" class="tabcontent">
-                        <h3>BIO SUMMARY</h3>
-                        <textarea id="biosummary" name="biosummary" rows="4"
-                            cols="50">I'm a mathematician and a retired professor. For the past 3 years, I have been using more sophisticated analysis to predict results based on every data I can acquire. I am writing a book now on betting theory and I believe every football games can be predicted with AI if we have enough data on hands. My analysis have been very accurate, and I have been selling them to support my researches.</textarea>
-
-                    </div>
-
-                    <div id="Performance" class="tabcontent">
-                        <h3>PERFORMANCE</h3>
-                        <textarea id="performance" name="performance" rows="4"
-                            cols="50">I'm a mathematician and a retired professor. For the past 3 years, I have been using more sophisticated analysis to predict results based on every data I can acquire. I am writing a book now on betting theory and I believe every football games can be predicted with AI if we have enough data on hands. My analysis have been very accurate, and I have been selling them to support my researches.</textarea>
-                    </div>
-                    <input type="submit" value="SAVE">
-                </form>
-            </div>
-            <div class="container-main-zean">
-                <h1>RUNNING TIPS</h1>
-                <table class="runningtips">
+                <h1>ประวัติซื้อทีเด็ด</h1>
+                <div class="datepicker-search">
+                    <form action="">
+                      <input type="date" id="datePicker" name="datePicker">
+                      <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" height="10" width="10"
+                          viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                          <path fill="#000000"
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                        </svg></button>
+                    </form>
+                  </div>
+                <table class="teded-history-table">
                     <thead>
                         <tr>
-                            <th>DATE</th>
-                            <th>EVENT</th>
-                            <th>BETTING TYPE</th>
-                            <th>RESULT</th>
-                            <th>ANALYTIC</th>
-                            <th>EDIT</th>
-                            <th>DELETE</th>
+                            <th>Date</th>
+                            <th>Event</th>
+                            <th>Betting Type</th>
+                            <th>Zean</th>
+                            <th>Result</th>
+                            <th>Analytic</th>
+                            <th>Odd</th>
+                            <th>Price</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>
-                                <strong>21.11.23</strong><br>20:45
+                              21.11.23 <br> 20:45
                             </td>
                             <td>
-                                <strong>Radcliffe - Whitby</strong><br>England 7-Northern Premier Division
+                              Radcliffe - Whitby <br> England 7-Northern Premier Division
                             </td>
-                            <td>Total goal <br> FullTime</td>
-                            <td>07:25:55 <br> Until Kick Off</td>
-                            <td><textarea disabled class="zeananalyticta" name="" id="" cols="15"
-                                    rows="2">ฟันธงรองชรูว์สบิวรี่ ขี่ได้ แน่นอนค้าบบบบบบบบบบบบบบ</textarea></td>
-                            <td><button>EDIT</button></td>
-                            <td><button>DELETE</button></td>
+                            <td>
+                              Total goal <br> FullTime
+                            </td>
+                            <td>
+                                <a href="zean-info.html">FREDRIK KNUDSEN</a><br> Bundle Zean
+                            </td>
+                            <td>
+                              WIN
+                            </td>
+                            <td>
+                              <textarea disabled name="" id="" cols="15" rows="2">ฟันธงรองชรูว์สบิวรี่ ขี่ได้ แน่นอน</textarea>
+                            </td>
+                            <td>
+                              1.5
+                            </td>
+                            <td>
+                              $120
+                            </td>
                         </tr>
                         <tr>
-                            <td>
-                                <strong>21.11.23</strong><br>20:45
-                            </td>
-                            <td>
-                                <strong>Radcliffe - Whitby</strong><br>England 7-Northern Premier Division
-                            </td>
-                            <td>Total goal <br> FullTime</td>
-                            <td>07:25:55 <br> Until Kick Off</td>
-                            <td><textarea disabled class="zeananalyticta" name="" id="" cols="15"
-                                    rows="2">ฟันธงรองชรูว์สบิวรี่ ขี่ได้ แน่นอน</textarea></td>
-                            <td><button>EDIT</button></td>
-                            <td><button>DELETE</button></td>
-                        </tr>
+                          <td>
+                            21.11.23 <br> 20:45
+                          </td>
+                          <td>
+                            Radcliffe - Whitby <br> England 7-Northern Premier Division
+                          </td>
+                          <td>
+                            Total goal <br> FullTime
+                          </td>
+                          <td>
+                              <a href="zean-info.html">FREDRIK KNUDSEN</a><br> Bundle Zean
+                          </td>
+                          <td>
+                            WIN
+                          </td>
+                          <td>
+                            <textarea disabled name="" id="" cols="15" rows="2">ฟันธงรองชรูว์สบิวรี่ ขี่ได้ แน่นอน</textarea>
+                          </td>
+                          <td>
+                            1.5
+                          </td>
+                          <td>
+                            $120
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                            21.11.23 <br> 20:45
+                          </td>
+                          <td>
+                            Radcliffe - Whitby <br> England 7-Northern Premier Division
+                          </td>
+                          <td>
+                            Total goal <br> FullTime
+                          </td>
+                          <td>
+                              <a href="zean-info.html">FREDRIK KNUDSEN</a><br> Bundle Zean
+                          </td>
+                          <td>
+                            WIN
+                          </td>
+                          <td>
+                            <textarea disabled name="" id="" cols="15" rows="2">ฟันธงรองชรูว์สบิวรี่ ขี่ได้ แน่นอน111111111111111111111</textarea>
+                          </td>
+                          <td>
+                            1.5 
+                          </td>
+                          <td>
+                            $120
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                            21.11.23 <br> 20:45
+                          </td>
+                          <td>
+                            Radcliffe - Whitby <br> England 7-Northern Premier Division
+                          </td>
+                          <td>
+                            Total goal <br> FullTime
+                          </td>
+                          <td>
+                              <a href="zean-info.html">FREDRIK KNUDSEN</a><br> Bundle Zean
+                          </td>
+                          <td>
+                            WIN
+                          </td>
+                          <td>
+                            <textarea disabled name="" id="" cols="15" rows="2">ฟันธงรองชรูว์สบิวรี่ ขี่ได้ แน่นอน</textarea>
+                          </td>
+                          <td>
+                            1.5
+                          </td>
+                          <td>
+                            $120
+                          </td>
+                      </tr>
+                      
+                      
                     </tbody>
                 </table>
+
             </div>
 
         </div>
@@ -312,7 +380,7 @@
     <footer>
         <div class="footer">
             <div class="footer-desc">
-                <a href=""><img class="logo-img-footer" src="img/logo.png" alt=""></a>
+                <a href="zean-info.html"><img class="logo-img-footer" src="img/logo.png" alt=""></a>
                 <div>เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zeanเว็บ
                     teded
                     zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean</div>

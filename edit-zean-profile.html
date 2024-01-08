@@ -141,7 +141,7 @@
                 <hr>
                 <div class="menuzean">
 
-                    <a href="edit-zean-home.html" class="icon-menu active">
+                    <a href="edit-zean-home.html" class="icon-menu">
                         <svg xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
                             <path
@@ -149,7 +149,7 @@
                         </svg>
                         <p>หน้าแรก</p>
                     </a>
-                    <a href="edit-zean-profile.html" class="icon-menu">
+                    <a href="edit-zean-profile.html" class="icon-menu active">
                         <svg xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
                             <path fill="#000000"
@@ -157,7 +157,6 @@
                         </svg>
                         <p>PROFILE</p>
                     </a>
-
                     <a href="edit-zean-teded.html" class="icon-menu">
                         <svg xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
@@ -219,74 +218,63 @@
 
         <!-- right -->
         <div class="container-back-right">
-            <h2 class="freeteded-header">หน้าแรก</h2>
+            <h2 class="freeteded-header">PROFILE</h2>
             <div class="container-main-zean">
                 <h1>PROFILE</h1>
-                <div class="tab">
-                    <button class="tablinks" onclick="openTab(event, 'Profile')" id="defaultOpen">PROFILE</button>
-                    <button class="tablinks" onclick="openTab(event, 'Performance')">PERFORMANCE</button>
-                </div>
-                <form action="/action_page.php">
-                    <div id="Profile" class="tabcontent">
-                        <h3>BIO SUMMARY</h3>
-                        <textarea id="biosummary" name="biosummary" rows="4"
-                            cols="50">I'm a mathematician and a retired professor. For the past 3 years, I have been using more sophisticated analysis to predict results based on every data I can acquire. I am writing a book now on betting theory and I believe every football games can be predicted with AI if we have enough data on hands. My analysis have been very accurate, and I have been selling them to support my researches.</textarea>
+                <hr>
+                <form class="formprofile" action="/action_page.php">
+                    
+                
+                    <label for="name"><b>NAME : </b></label>
+                    <input type="text"  name="name" id="name" required value="FREDRIK"> 
+                
+                    <label for="lastname"><b>LASTNAME : </b></label>
+                    <input type="text" name="lastname" id="lastname" required value="KNUDSEN"> 
+      
+                    <label for="birthdate"><b>DATE OF BIRTH :</b></label>
+                    <input type="date" name="birthdate" id="birthdate" required value="1994-09-16">
+      
+                    <label for="email"><b>EMAIL :</b></label>
+                    <input type="email" placeholder="Enter Email" name="email" id="email" required value="test@hotmail.com">
+      
+                    <label for="phone"><b>MOBILE NO :</b></label>
+                    <input type="tel" placeholder="Enter Mobile number" name="phone" id="phone" required value="099-999-9999">
+      
+                    <label for="lineid"><b>LINE ID :</b></label>
+                    <input type="text" placeholder="Enter Line ID" name="lineid" id="lineid" required value="0999999999">
+      
+                    <label for="avatar"><b>Choose a profile picture:</b></label>
+                    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
 
-                    </div>
-
-                    <div id="Performance" class="tabcontent">
-                        <h3>PERFORMANCE</h3>
-                        <textarea id="performance" name="performance" rows="4"
-                            cols="50">I'm a mathematician and a retired professor. For the past 3 years, I have been using more sophisticated analysis to predict results based on every data I can acquire. I am writing a book now on betting theory and I believe every football games can be predicted with AI if we have enough data on hands. My analysis have been very accurate, and I have been selling them to support my researches.</textarea>
-                    </div>
-                    <input type="submit" value="SAVE">
+                    <label for="gender"><b>GENDER :</b></label>
+                    <select name="gender" id="gender">
+                      <option value="#">---------- เลือกเพศ ----------</option>
+                      <option value="1" selected="selected">ชาย</option>
+                      <option value="2">หญิง</option>
+                    </select>
+                    
+                                    
+                    <button type="submit" class="save-profile">SAVE</button>
                 </form>
+
             </div>
             <div class="container-main-zean">
-                <h1>RUNNING TIPS</h1>
-                <table class="runningtips">
-                    <thead>
-                        <tr>
-                            <th>DATE</th>
-                            <th>EVENT</th>
-                            <th>BETTING TYPE</th>
-                            <th>RESULT</th>
-                            <th>ANALYTIC</th>
-                            <th>EDIT</th>
-                            <th>DELETE</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <strong>21.11.23</strong><br>20:45
-                            </td>
-                            <td>
-                                <strong>Radcliffe - Whitby</strong><br>England 7-Northern Premier Division
-                            </td>
-                            <td>Total goal <br> FullTime</td>
-                            <td>07:25:55 <br> Until Kick Off</td>
-                            <td><textarea disabled class="zeananalyticta" name="" id="" cols="15"
-                                    rows="2">ฟันธงรองชรูว์สบิวรี่ ขี่ได้ แน่นอนค้าบบบบบบบบบบบบบบ</textarea></td>
-                            <td><button>EDIT</button></td>
-                            <td><button>DELETE</button></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <strong>21.11.23</strong><br>20:45
-                            </td>
-                            <td>
-                                <strong>Radcliffe - Whitby</strong><br>England 7-Northern Premier Division
-                            </td>
-                            <td>Total goal <br> FullTime</td>
-                            <td>07:25:55 <br> Until Kick Off</td>
-                            <td><textarea disabled class="zeananalyticta" name="" id="" cols="15"
-                                    rows="2">ฟันธงรองชรูว์สบิวรี่ ขี่ได้ แน่นอน</textarea></td>
-                            <td><button>EDIT</button></td>
-                            <td><button>DELETE</button></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h1>Change Password</h1>
+                <hr>
+                <form class="formprofile" action="/action_page.php">
+
+                
+                    <label for="old-psw"><b>Old Password :</b></label>
+                      <input type="password" placeholder="Old Password" name="old-psw" id="old-psw" required>
+      
+                      <label for="psw-new"><b>New Password :</b></label>
+                      <input type="password" placeholder="New Password" name="psw-new" id="psw-new" required>
+      
+                      <label for="psw-repeat"><b>Repeat Password :</b></label>
+                      <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+                
+                    <button type="submit" class="save-profile">SAVE</button>
+                </form>
             </div>
 
         </div>
