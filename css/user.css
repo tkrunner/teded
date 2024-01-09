@@ -1,0 +1,569 @@
+.container-user {
+    display: flex;
+    max-width: 1400px;
+    margin: 50px auto 50px auto;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+.container-back-left {
+    width: 400px;
+    margin-right: 5px;
+
+}
+
+.container-back-right {
+    width: 1000px;
+    margin-left: 5px;
+
+}
+
+.container-main-user {
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 40px 60px;
+    border-top: solid 4px #016204;
+    border-bottom: solid 4px #ffac1a;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.container-main-user2 {
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 40px;
+    border-top: solid 4px #016204;
+    border-bottom: solid 4px #ffac1a;
+    margin-bottom: 30px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding-bottom: 60px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .container-back-left {
+        width: 100%;
+
+    }
+
+    .container-back-right {
+        width: 100%;
+
+    }
+
+}
+
+.profile-img {
+    width: 150px;
+}
+
+
+/* follower and credit */
+.creditfollow {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.creditfollowdetail {
+    width: 130px;
+    justify-content: center;
+    padding: 5px 0px 5px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.creditfollowdetail svg {
+    padding-top: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.credit-font span {
+    font-size: 10px;
+}
+
+.credit-font {
+    padding: 10px 5px;
+    font-size: 10px;
+    line-height: 1px;
+}
+
+.credit-font p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* follower and credit */
+
+
+/* menuuser */
+
+.menuuser {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icon-menu {
+    width: 70px;
+    font-size: 12px;
+    margin: 1px 1px;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.icon-menu:hover {
+    background-color: rgba(24, 24, 24, 0.247);
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.icon-menu.active {
+    background-color: rgba(24, 24, 24, 0.247);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.icon-menu svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* menuuser */
+
+/* topzean */
+
+.topzean {
+    display: flex;
+    align-items: center
+}
+
+.profile-img-topzean {
+    width: 100px;
+    height: 100px;
+}
+
+.zeaninfo {
+    margin: 0;
+    width: 100%;
+    padding: 15px 0px;
+}
+
+.zeaninfo h2 {
+    padding: 0px 10px;
+    margin: 10px 0px;
+}
+.zeaninfo span{
+    padding: 20px 10px;
+    font-size: 18px;
+}
+.win-draw-lose {
+    width: 100%;
+    display: flex;
+    font-size: 16px;
+    padding: 5px 0px;
+    text-align: center;
+}
+
+.win-draw-lose #Win {
+    color: #07e01d;
+    padding: 0px 10px;
+}
+
+.win-draw-lose #Draw {
+    color: #ffbb00;
+    padding: 0px 10px;
+}
+
+.win-draw-lose #Lose {
+    color: #ce0000;
+    padding: 0px 10px;
+}
+.follow-profile-bt{
+    display: flex;
+    width: 100%;
+}
+.follow-profile-bt button{
+    width: 50%;
+    margin: 5px 5px;
+}
+
+.follow-bt{
+    background-color: #ffbb0000;
+    color:#0A4700;
+    font-weight: 600;
+    border: 3px solid #0A4700;
+    border-radius: 10px;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+.follow-bt:hover{
+   color: white;
+   background-color: #0A4700;
+}
+.profile-bt{
+    background-color: #ffbb0000;
+    color:#96710c;
+    font-weight: 600;
+    border: 3px solid #96710c;
+    border-radius: 10px;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+.profile-bt:hover{
+   color: white;
+   background-color: #96710c;
+}
+
+/* topzean */
+
+
+/* table tip followed */
+.tip-followed-table {
+    margin-top: 20px;
+    width: 100%;
+    overflow: scroll;
+}
+
+.tip-followed-table th {
+    background-color: #0A4700;
+    color: white;
+    padding: 7px 4px 7px 4px;
+    font-size: 14px;
+}
+
+.tip-followed-table tr td {
+    background-color: #EDEDED;
+    padding: 10px 5px 10px 15px;
+    border: 0px;
+    color: black;
+    font-size: 12px;
+}
+
+.zean-analy {
+    resize: none;
+    border-radius: 10px;
+    border: 0px;
+    background-color: white;
+    padding: 8px;
+    color: #000000;
+}
+
+td a {
+    color: black;
+    text-decoration: underline;
+}
+
+td a:hover {
+    color: #0A4700;
+    text-decoration: underline;
+}
+
+.bt-purchase {
+    background-color: #ffffff00;
+    border: 3px solid #089216;
+    color: #089216;
+    border-radius: 10px;
+    padding: 3px 20px 3px 20px;
+
+}
+
+.bt-purchase:hover {
+    background-color: #089216;
+    color: white;
+    border: 3px solid #089216;
+    cursor: pointer;
+}
+
+.bt-purchase.active {
+    background-color: #089216;
+    color: white;
+    border: 3px solid #089216;
+    cursor: auto;
+}
+
+/* table tip followed */
+
+/* profile */
+.formprofile input[id=name],
+.formprofile input[id=birthdate],
+.formprofile input[id=email],
+.formprofile input[id=phone],
+.formprofile input[id=lineid],
+.formprofile input[id=lastname],
+.formprofile input[id=avatar],
+.formprofile input[id=old-psw],
+.formprofile input[id=psw-new],
+.formprofile input[id=psw-repeat] {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: flex;
+    border: 1px solid #ccc;
+}
+
+select[id=gender] {
+    width: 65%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: flex;
+    border: 1px solid #ccc;
+}
+
+.formprofile {
+    display: flex;
+    width: 90%;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.formprofile label {
+    width: 30%;
+    display: flex;
+
+}
+
+.save-profile {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    border-radius: 20px;
+    border: 1px solid var(--color-main);
+    color: white;
+    font-weight: 600;
+    background-color: var(--color-main);
+    cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .save-profile {
+        width: 100%;
+    }
+
+    .formprofile label {
+        width: 100%;
+        display: flex;
+
+    }
+
+    .formprofile input[id=name],
+    .formprofile input[id=birthdate],
+    .formprofile input[id=email],
+    .formprofile input[id=phone],
+    .formprofile input[id=lineid],
+    .formprofile input[id=lastname],
+    .formprofile input[id=avatar],
+    .formprofile input[id=old-psw],
+    .formprofile input[id=psw-new],
+    .formprofile input[id=psw-repeat] {
+        width: 100%;
+    }
+
+    .formprofile select[id=gender] {
+        width: 100%
+    }
+}
+
+/* profile */
+
+/* favourite-zean */
+
+.favourite-zean-table{
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+.favourite-zean-table th{
+    background-color: #0A4700;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    font-size: 16px;
+  }
+  
+  .favourite-zean-table td{
+    background-color: #EDEDED;
+    padding: 10px 0px 10px 0px;
+    border: 0px;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+
+  }
+
+  .bt-follow {
+    background-color: #ffffff00;
+    border: 3px solid #089216;
+    color: #089216;
+    border-radius: 10px;
+    padding: 3px 20px 3px 20px;
+
+}
+
+.bt-follow:hover {
+    background-color: #089216;
+    color: white;
+    border: 3px solid #089216;
+    cursor: pointer;
+}
+
+.bt-follow.active {
+    background-color: #089216;
+    color: white;
+    border: 3px solid #089216;
+    cursor: auto;
+}
+/* favourite-zean */
+
+/* teded */
+.datepicker-search{
+    display: flex;
+    flex-direction :row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .datepicker-search input{
+      border-radius: 20px;
+      padding: 5px;
+  }
+  
+  .datepicker-search button{
+      border-radius: 20px;
+      padding: 5px 10px;
+      border: 1px solid rgb(0, 0, 0);
+      background-color: white;
+  }
+  
+  .datepicker-search button:hover{
+      background-color: rgb(211, 211, 211);
+      cursor: pointer;
+  }
+  .teded-history-table{
+    margin-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+}
+.teded-history-table th{
+    background-color: #0A4700;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    font-size: 13px;
+  }
+  
+  .teded-history-table td{
+    background-color: #EDEDED;
+    padding: 5px 0px 5px 0px;
+    border: 0px;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+  .teded-history-table td textarea{
+    resize: none;
+    width: 150px;
+    margin: 0;
+  }
+  @media screen and (max-width: 600px) {
+    .teded-history-table{
+        display: block;
+        overflow: scroll;
+    }
+
+
+  }
+  /* teded */
+
+  /* withdraw-history */
+  .withdraw-history-table{
+    margin-top: 5px;
+    width: 100%;
+    border-collapse: collapse;
+}
+.withdraw-history-table th{
+    background-color: #0A4700;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    font-size: 16px;
+    width: 33%;
+  }
+  
+  .withdraw-history-table td{
+    background-color: #EDEDED;
+    padding: 10px 0px 10px 0px;
+    border: 0px;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+
+  /* withdraw-history */
+
+  /* withdraw */
+  .withdraw-form{
+    display: flex;
+    width: 600px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.withdraw-form label {
+    width: 30%;
+    display: flex;
+}
+.withdraw-form input[id=name],.withdraw-form input[id=lastname]{
+    width: 15%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    background-color: white;
+    border: none;
+}
+.withdraw-form input[id=bank]{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    background-color: white;
+    border: none;
+}
+.withdraw-form input[id=banknum]{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    background-color: white;
+    border: none;
+}
+.withdraw-form input[id=credit]{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    background-color: white;
+    border-radius: 20px;
+}
+.submit-withdraw{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    border-radius: 20px;
+    border: 1px solid var(--color-main);
+    color: white;
+    font-weight: 600;
+    background-color: var(--color-main);
+    cursor: pointer;
+}
+  /* withdraw */

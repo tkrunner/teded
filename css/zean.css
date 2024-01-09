@@ -99,6 +99,7 @@
 .tip-win-profit {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .tip-win-profit div {
@@ -125,10 +126,10 @@
 }
 
 .icon-menu {
-    width: 32%;
+    width: 70px;
     font-size: 12px;
     margin: 1px 1px;
-    padding: 10px 0px;
+    padding: 10px 10px;
     text-decoration: none;
     color: black;
 }
