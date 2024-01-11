@@ -40,7 +40,7 @@
     padding-bottom: 60px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 840px) {
 
     .container-back-left {
         width: 100%;
@@ -252,10 +252,10 @@
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 840px) {
     .tip-followed-table {
         overflow: scroll;
-        display: flex;
+        display: block;
     }
 
 }
@@ -265,6 +265,7 @@
     color: white;
     padding: 10px 4px 10px 4px;
     font-size: 14px;
+    white-space: nowrap;
     
 }
 
@@ -275,6 +276,7 @@
     color: black;
     font-size: 12px;
     border-bottom: 1px solid white;
+    white-space: nowrap;
 }
 
 .zean-analy {
@@ -380,7 +382,7 @@ select[id=gender] {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 840px) {
     .save-profile {
         width: 100%;
     }
@@ -421,7 +423,7 @@ select[id=gender] {
     border-radius: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 840px){
     .favourite-zean-table{
         display: flex;
     overflow: scroll;
@@ -433,6 +435,7 @@ select[id=gender] {
     color: white;
     padding: 10px 10px 10px 10px;
     font-size: 16px;
+    white-space: nowrap;
 }
 
 .favourite-zean-table td {
@@ -443,6 +446,7 @@ select[id=gender] {
     font-size: 14px;
     text-align: center;
     border-bottom: 1px solid rgb(255, 255, 255);
+    white-space: nowrap;
 
 }
 
@@ -510,6 +514,7 @@ select[id=gender] {
     color: white;
     padding: 10px 10px 10px 10px;
     font-size: 14px;
+    white-space: nowrap;
 }
 
 .teded-history-table td {
@@ -520,10 +525,11 @@ select[id=gender] {
     font-size: 12px;
     text-align: center;
     border-bottom: 1px solid rgb(255, 255, 255);
+    white-space: nowrap;
 }
 
 .teded-history-table td textarea {
-    width: 100%;
+    width: 150px;
     padding: 5px 5px;
     margin: 0;
     border: 1px solid #ccc;
@@ -531,7 +537,7 @@ select[id=gender] {
     border-radius: 5px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 840px) {
     .teded-history-table {
         display: block;
         overflow: scroll;
@@ -558,6 +564,7 @@ select[id=gender] {
     padding: 10px 0px 10px 0px;
     font-size: 16px;
     width: 100px;
+    white-space: nowrap;
 }
 
 .withdraw-history-table td {
@@ -568,8 +575,9 @@ select[id=gender] {
     font-size: 14px;
     text-align: center;
     border-bottom: 1px solid rgb(255, 255, 255);
+    white-space: nowrap;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 840px) {
     .withdraw-history-table th {
         font-size: 14px;
     }
@@ -645,7 +653,7 @@ select[id=gender] {
     cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 840px) {
     .withdraw-form {
         width: 100%;
     }

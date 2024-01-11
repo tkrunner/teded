@@ -30,7 +30,7 @@
 
     }
 
-    .container-main-zean{
+    .container-main-zean {
         padding: 40px 20px !important;
     }
 
@@ -167,7 +167,7 @@ textarea[id=performance] {
     border: 1px solid rgb(138, 138, 138);
     border-radius: 10px;
     resize: none;
-    
+
 }
 
 .container-main-zean input[type=submit] {
@@ -193,8 +193,8 @@ textarea[id=performance] {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (max-width: 600px){
-    .runningtips{
+@media screen and (max-width: 600px) {
+    .runningtips {
         display: block;
         overflow: scroll;
     }
@@ -239,13 +239,67 @@ textarea[id=performance] {
     padding: 3px 20px 3px 20px;
     width: 100%;
 }
+
 .delete-bt:hover {
     background-color: #d60000;
     fill: white;
     cursor: pointer;
 }
 
+.closecontainer {
+    margin: 0px 0 50px 0;
+    position: relative;
+}
 
+
+.formteded-edit {
+    background-color: #fefefe;
+    width: 700px;
+    margin: 50px auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border: 1px solid #888;
+    border-radius: 20px;
+    padding: 20px 0px;
+}
+
+.formteded-edit input[id=bettingprice],
+.formteded-edit input[id=oddprice],
+.formteded-edit input[id=price],
+.formteded-edit textarea[id=analytic] {
+    width: 400px;
+    padding: 12px 20px;
+    margin: 8px auto;
+    display: flex;
+    border: 1px solid #ccc;
+    resize: none;
+    border-radius: 5px;
+}
+
+.formteded-edit select[id=team1],
+.formteded-edit select[id=team2],
+.formteded-edit select[id=bettingtype] {
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px auto;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+@media screen and (max-width:600px) {
+    .formteded-edit{
+        width: 80%;
+    }
+    .formteded-edit input[id=bettingprice],
+.formteded-edit input[id=oddprice],
+.formteded-edit input[id=price],
+.formteded-edit textarea[id=analytic] ,
+.formteded-edit select[id=team1],
+.formteded-edit select[id=team2],
+.formteded-edit select[id=bettingtype]
+{
+    width: 60%;
+}
+}
 
 /* home */
 
@@ -311,7 +365,7 @@ select[id=gender] {
 
 @media screen and (max-width: 600px) {
     .save-profile {
-        width: 100%;
+        width: 80%;
     }
 
     .formprofile label {
@@ -349,7 +403,7 @@ select[id=gender] {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .formteded label {
@@ -513,11 +567,13 @@ select[id=gender] {
     text-align: center;
     border-bottom: 1px solid rgb(255, 255, 255);
 }
+
 @media screen and (max-width: 600px) {
     .withdraw-history-table th {
         font-size: 14px;
     }
-    .withdraw-history-table td{
+
+    .withdraw-history-table td {
         font-size: 12px;
         padding: 10px 20px 10px 20px;
     }
@@ -528,34 +584,44 @@ select[id=gender] {
 /* predict history */
 .predict-history-table {
     margin-top: 10px;
-    width: 100%;
     border-collapse: collapse;
     background-color: #0A4700;
     border-radius: 10px;
+    width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    
 }
 
 .predict-history-table th {
     background-color: #09470000;
     color: white;
-    padding: 10px 5px 10px 5px;
+    padding: 10px 10px 10px 10px;
     font-size: 16px;
+    white-space: nowrap;
 }
 
 .predict-history-table td {
     background-color: #EDEDED;
-    padding: 10px 5px 10px 5px;
+    padding: 10px 10px 10px 10px;
     border: 0px;
     color: black;
     font-size: 14px;
     text-align: center;
     border-bottom: 1px solid rgb(255, 255, 255);
+    white-space: nowrap;
 }
 
 .predict-history-table td textarea {
     resize: none;
     width: 150px;
     margin: 0;
+    border-radius: 10px;
+}
+@media screen and (max-width:600px) {
+    .predict-history-table{
+        display: block;
+        overflow: scroll;
+    }
 }
 
 /* predict history */
@@ -629,4 +695,5 @@ select[id=gender] {
         width: 100%;
     }
 }
+
 /* withdraw */

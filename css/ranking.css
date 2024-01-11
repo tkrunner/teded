@@ -6,7 +6,9 @@
     margin: 50px auto 50px auto;
     background-color: rgba(0, 0, 0, 0);
 }
-
+.container-main-body h1{
+  text-align: center;
+}
 .top5-table thead tr th {
   font-size: 26px;
   border-bottom: 2px solid rgb(37, 37, 37);
@@ -38,6 +40,7 @@ a:hover{
 }
 
 .ranking-table {
+  margin-top:10px;
   text-align: center;
   background-color: white;
   border-radius: 10px;
@@ -47,10 +50,14 @@ a:hover{
   width: 500px;
   margin: auto;
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:840px) {
   .top5-table {
     width: 100%;
     padding: 15px;
+  }
+  .top5-table a{
+    font-size: 12px;
+    white-space: nowrap; /*  ทำให้ตัวหนังสือไม่ตกบรรทัด */
   }
 }
 
@@ -75,7 +82,7 @@ a:hover{
     color: white;
     padding: 15px 10px;
     font-size: 16px;
-    
+    white-space: nowrap; /*  ทำให้ตัวหนังสือไม่ตกบรรทัด */
 }
 
 .all-zean-table td{
@@ -84,6 +91,7 @@ a:hover{
   border-bottom: 2px solid rgb(255, 255, 255);
   text-align: center;
   background-color: rgb(228, 228, 228);
+  white-space: nowrap; /*  ทำให้ตัวหนังสือไม่ตกบรรทัด */
 }
 
 .all-zean-table{
@@ -96,10 +104,11 @@ box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
 
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:840px) {
   .all-zean-table{
     padding: 0px;
-    width: 100%;
+    width: 575px;
+    margin: auto;
     display: block;
     overflow: scroll;
   }
@@ -112,6 +121,7 @@ box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
   fill: #0A4700;
   background-color: rgba(255, 0, 0, 0);
   width: 100%;
+  
   
 
 }

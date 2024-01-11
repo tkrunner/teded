@@ -88,7 +88,7 @@
   display: block;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 840px) {
 
   .topnav a:not(:first-child),
   .dropdown .dropbtn {
@@ -108,7 +108,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 840px) {
   .topnav.responsive {
     position: relative;
     padding-bottom: 20px;

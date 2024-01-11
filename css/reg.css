@@ -192,7 +192,7 @@ input[id=uname], input[id=psw],input[id=psw-repeat],input[id=lname],select[id=ba
     border-radius: 5px;
     font-weight: 600;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 840px) {
     .formregis{
         padding: 0px 50px;
     }
