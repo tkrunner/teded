@@ -153,6 +153,8 @@
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: var(--color-main);
+    border-radius: 10px 10px 0px 0px;
+    
 }
 
 /* Style the buttons inside the tab */
@@ -173,7 +175,8 @@
     padding: 10px 20px;
     border: 1px solid #ccc;
     border-top: none;
-}
+    border-radius: 0px 0px 10px 10px;
+}   
 
 
 .tablinks {
@@ -203,17 +206,17 @@
 
 /* runningtip */
 
-.runningtips-table thead tr th {
-    background-color: #089216;
+.runningtips-table th {
+    background-color: rgba(255, 255, 255, 0);
     color: white;
     font-size: 16px;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 10px 10px 10px;
     text-align: center;
 }
 
-.runningtips-table tbody tr td {
-    padding: 10px 0px 10px 0px;
-    font-size: 16px;
+.runningtips-table td {
+    padding: 10px 10px 10px 10px;
+    font-size: 14px;
     border-bottom: 3px solid #D9D9D9;
     text-align: center;
     background-color: rgb(238, 238, 238);
@@ -221,24 +224,33 @@
 
 .runningtips-table {
     width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: var(--color-main);
     /* overflow: scroll;
     display: block; */
 }
 
 .purchase-button {
-    padding: 3px 30px 3px 30px;
+    padding: 5px 20px 5px 20px;
     border: 3px solid #0A4700;
     border-radius: 5px;
     color: #0A4700;
     background-color: rgba(255, 0, 0, 0);
     font-weight: 600;
 }
-
+.purchase-button:hover{
+    color: white;
+    background-color: var(--color-main);
+    cursor: pointer;
+}
 
 .analytic-area {
     resize: none;
     border-radius: 10px;
     border: 0px;
+    width: 150px;
     background-color: white;
     padding: 5px;
     color: #000000;
@@ -248,17 +260,17 @@
 
 
 /* history */
-.history-table thead tr th{
-    background-color: #089216;
+.history-table th{
+    background-color: rgba(255, 255, 255, 0);
     color: white;
     font-size: 16px;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 10px 10px 10px;
     text-align: center;
   }
   
-  .history-table tbody tr td{
-    padding: 10px 0px 10px 0px;
-    font-size: 16px;
+  .history-table td{
+    padding: 10px 10px 10px 10px;
+    font-size: 14px;
     border-bottom: 3px solid #D9D9D9;
     text-align: center;
     background-color: rgb(238, 238, 238);
@@ -266,6 +278,10 @@
 
   .history-table{
     width: 100%;
+    border-collapse: collapse;
+    background-color: var(--color-main);
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
   }
 
 

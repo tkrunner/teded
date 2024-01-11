@@ -52,6 +52,10 @@
 
     }
 
+    .container-main-user {
+        padding: 40px 15px;
+    }
+
 }
 
 .profile-img {
@@ -160,10 +164,12 @@
     padding: 0px 10px;
     margin: 10px 0px;
 }
-.zeaninfo span{
+
+.zeaninfo span {
     padding: 20px 10px;
     font-size: 18px;
 }
+
 .win-draw-lose {
     width: 100%;
     display: flex;
@@ -186,40 +192,51 @@
     color: #ce0000;
     padding: 0px 10px;
 }
-.follow-profile-bt{
+
+.follow-profile-bt {
     display: flex;
     width: 100%;
 }
-.follow-profile-bt button{
+
+.follow-profile-bt button {
     width: 50%;
     margin: 5px 5px;
 }
 
-.follow-bt{
+.follow-bt {
     background-color: #ffbb0000;
-    color:#0A4700;
+    fill: #0A4700;
     font-weight: 600;
     border: 3px solid #0A4700;
     border-radius: 10px;
-    padding: 5px 5px;
+    padding: 5px 10px;
     cursor: pointer;
+    width: 100%;
 }
-.follow-bt:hover{
-   color: white;
-   background-color: #0A4700;
+
+.follow-bt:hover {
+    background-color: #0A4700;
+    fill: white;
 }
-.profile-bt{
+
+.follow-bt.active{
+    fill: white;
+    background-color: #0A4700;
+} 
+
+.profile-bt {
     background-color: #ffbb0000;
-    color:#96710c;
+    color: #96710c;
     font-weight: 600;
     border: 3px solid #96710c;
     border-radius: 10px;
     padding: 5px 5px;
     cursor: pointer;
 }
-.profile-bt:hover{
-   color: white;
-   background-color: #96710c;
+
+.profile-bt:hover {
+    color: white;
+    background-color: #96710c;
 }
 
 /* topzean */
@@ -229,22 +246,35 @@
 .tip-followed-table {
     margin-top: 20px;
     width: 100%;
-    overflow: scroll;
+    background-color: var(--color-main);
+    border-collapse: collapse;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 600px) {
+    .tip-followed-table {
+        overflow: scroll;
+        display: flex;
+    }
+
 }
 
 .tip-followed-table th {
-    background-color: #0A4700;
+    background-color: #09470000;
     color: white;
-    padding: 7px 4px 7px 4px;
+    padding: 10px 4px 10px 4px;
     font-size: 14px;
+    
 }
 
-.tip-followed-table tr td {
+.tip-followed-table td {
     background-color: #EDEDED;
     padding: 10px 5px 10px 15px;
     border: 0px;
     color: black;
     font-size: 12px;
+    border-bottom: 1px solid white;
 }
 
 .zean-analy {
@@ -307,6 +337,7 @@ td a:hover {
     margin: 8px 0px;
     display: flex;
     border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 select[id=gender] {
@@ -315,6 +346,7 @@ select[id=gender] {
     margin: 8px 0px;
     display: flex;
     border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .formprofile {
@@ -381,30 +413,40 @@ select[id=gender] {
 
 /* favourite-zean */
 
-.favourite-zean-table{
+.favourite-zean-table {
     margin-top: 20px;
     width: 100%;
     border-collapse: collapse;
-}
-.favourite-zean-table th{
     background-color: #0A4700;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 600px){
+    .favourite-zean-table{
+        display: flex;
+    overflow: scroll;
+    }
+}
+
+.favourite-zean-table th {
+    background-color: #09470000;
     color: white;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 10px 10px 10px;
     font-size: 16px;
-  }
-  
-  .favourite-zean-table td{
+}
+
+.favourite-zean-table td {
     background-color: #EDEDED;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 10px 10px 10px;
     border: 0px;
     color: black;
     font-size: 14px;
     text-align: center;
     border-bottom: 1px solid rgb(255, 255, 255);
 
-  }
+}
 
-  .bt-follow {
+.bt-follow {
     background-color: #ffffff00;
     border: 3px solid #089216;
     color: #089216;
@@ -426,82 +468,99 @@ select[id=gender] {
     border: 3px solid #089216;
     cursor: auto;
 }
+
 /* favourite-zean */
 
-/* teded */
-.datepicker-search{
+/* teded history*/
+.datepicker-search {
     display: flex;
-    flex-direction :row;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-  }
-  .datepicker-search input{
-      border-radius: 20px;
-      padding: 5px;
-  }
-  
-  .datepicker-search button{
-      border-radius: 20px;
-      padding: 5px 10px;
-      border: 1px solid rgb(0, 0, 0);
-      background-color: white;
-  }
-  
-  .datepicker-search button:hover{
-      background-color: rgb(211, 211, 211);
-      cursor: pointer;
-  }
-  .teded-history-table{
+}
+
+.datepicker-search input {
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.datepicker-search button {
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: white;
+}
+
+.datepicker-search button:hover {
+    background-color: rgb(211, 211, 211);
+    cursor: pointer;
+}
+
+.teded-history-table {
     margin-top: 10px;
     width: 100%;
     border-collapse: collapse;
-}
-.teded-history-table th{
     background-color: #0A4700;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+.teded-history-table th {
+    background-color: #09470000;
     color: white;
-    padding: 10px 0px 10px 0px;
-    font-size: 13px;
-  }
-  
-  .teded-history-table td{
+    padding: 10px 10px 10px 10px;
+    font-size: 14px;
+}
+
+.teded-history-table td {
     background-color: #EDEDED;
-    padding: 5px 0px 5px 0px;
+    padding: 5px 10px 5px 10px;
     border: 0px;
     color: black;
     font-size: 12px;
     text-align: center;
     border-bottom: 1px solid rgb(255, 255, 255);
-  }
-  .teded-history-table td textarea{
-    resize: none;
-    width: 150px;
+}
+
+.teded-history-table td textarea {
+    width: 100%;
+    padding: 5px 5px;
     margin: 0;
-  }
-  @media screen and (max-width: 600px) {
-    .teded-history-table{
+    border: 1px solid #ccc;
+    resize: none;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .teded-history-table {
         display: block;
         overflow: scroll;
     }
 
 
-  }
-  /* teded */
+}
 
-  /* withdraw-history */
-  .withdraw-history-table{
-    margin-top: 5px;
+/* teded history*/
+
+/* withdraw-history */
+.withdraw-history-table {
+    margin-top: 10px;
     width: 100%;
     border-collapse: collapse;
-}
-.withdraw-history-table th{
     background-color: #0A4700;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+.withdraw-history-table th {
+    background-color: #09470000;
     color: white;
     padding: 10px 0px 10px 0px;
     font-size: 16px;
-    width: 33%;
-  }
-  
-  .withdraw-history-table td{
+    width: 100px;
+}
+
+.withdraw-history-table td {
     background-color: #EDEDED;
     padding: 10px 0px 10px 0px;
     border: 0px;
@@ -509,53 +568,72 @@ select[id=gender] {
     font-size: 14px;
     text-align: center;
     border-bottom: 1px solid rgb(255, 255, 255);
-  }
+}
+@media screen and (max-width: 600px) {
+    .withdraw-history-table th {
+        font-size: 14px;
+    }
+    .withdraw-history-table td{
+        font-size: 12px;
+        padding: 10px 20px 10px 20px;
+    }
+}
 
-  /* withdraw-history */
+/* withdraw-history */
 
-  /* withdraw */
-  .withdraw-form{
+/* withdraw */
+.withdraw-form {
     display: flex;
+    padding: 30px 5px;
     width: 600px;
     margin: 20px auto;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-color: rgba(255, 0, 0, 0);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .withdraw-form label {
     width: 30%;
     display: flex;
 }
-.withdraw-form input[id=name],.withdraw-form input[id=lastname]{
+
+.withdraw-form input[id=name],
+.withdraw-form input[id=lastname] {
     width: 15%;
     padding: 12px 20px;
     margin: 8px 0px;
     background-color: white;
     border: none;
 }
-.withdraw-form input[id=bank]{
+
+.withdraw-form input[id=bank] {
     width: 40%;
     padding: 12px 20px;
     margin: 8px 0px;
     background-color: white;
     border: none;
 }
-.withdraw-form input[id=banknum]{
+
+.withdraw-form input[id=banknum] {
     width: 40%;
     padding: 12px 20px;
     margin: 8px 0px;
     background-color: white;
     border: none;
 }
-.withdraw-form input[id=credit]{
+
+.withdraw-form input[id=credit] {
     width: 40%;
     padding: 12px 20px;
     margin: 8px 0px;
     background-color: white;
     border-radius: 20px;
 }
-.submit-withdraw{
+
+.submit-withdraw {
     width: 30%;
     padding: 12px 20px;
     margin: 8px 0px;
@@ -566,4 +644,11 @@ select[id=gender] {
     background-color: var(--color-main);
     cursor: pointer;
 }
-  /* withdraw */
+
+@media screen and (max-width: 600px) {
+    .withdraw-form {
+        width: 100%;
+    }
+}
+
+/* withdraw */

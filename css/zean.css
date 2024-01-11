@@ -30,6 +30,10 @@
 
     }
 
+    .container-main-zean{
+        padding: 40px 20px !important;
+    }
+
 }
 
 .container-main-zean {
@@ -163,6 +167,7 @@ textarea[id=performance] {
     border: 1px solid rgb(138, 138, 138);
     border-radius: 10px;
     resize: none;
+    
 }
 
 .container-main-zean input[type=submit] {
@@ -183,24 +188,64 @@ textarea[id=performance] {
     width: 100%;
     border-collapse: collapse;
     margin: 0;
-
+    background-color: var(--color-main);
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
 }
 
-.runningtips thead tr th {
-    background-color: #089216;
+@media screen and (max-width: 600px){
+    .runningtips{
+        display: block;
+        overflow: scroll;
+    }
+}
+
+.runningtips thead th {
+    background-color: rgba(255, 255, 255, 0);
     color: white;
-    font-size: 14px;
+    font-size: 15px;
     padding: 10px 0px 10px 0px;
     text-align: center;
 }
 
-.runningtips tbody tr td {
-    padding: 10px 0px 10px 0px;
+.runningtips tbody td {
+    padding: 15px 10px 15px 10px;
     font-size: 14px;
     border-bottom: 3px solid #D9D9D9;
     text-align: center;
     background-color: rgb(238, 238, 238);
 }
+
+.edit-bt {
+    background-color: #ffffff00;
+    border: 3px solid var(--color-main);
+    fill: var(--color-main);
+    border-radius: 10px;
+    padding: 3px 20px 3px 20px;
+    width: 100%;
+}
+
+.edit-bt:hover {
+    background-color: var(--color-main);
+    fill: white;
+    cursor: pointer;
+}
+
+.delete-bt {
+    background-color: #ffffff00;
+    border: 3px solid #d60000;
+    fill: #d60000;
+    border-radius: 10px;
+    padding: 3px 20px 3px 20px;
+    width: 100%;
+}
+.delete-bt:hover {
+    background-color: #d60000;
+    fill: white;
+    cursor: pointer;
+}
+
+
 
 /* home */
 
@@ -221,6 +266,7 @@ textarea[id=performance] {
     margin: 8px 0px;
     display: flex;
     border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 select[id=gender] {
@@ -229,6 +275,7 @@ select[id=gender] {
     margin: 8px 0px;
     display: flex;
     border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .formprofile {
@@ -249,7 +296,7 @@ select[id=gender] {
 .save-profile {
     width: 30%;
     padding: 12px 20px;
-    margin: 8px 0px;
+    margin: 20px 0px;
     border-radius: 20px;
     border: 1px solid var(--color-main);
     color: white;
@@ -295,48 +342,67 @@ select[id=gender] {
 
 
 /* teded */
-.formteded{
+.formteded {
     display: flex;
     width: 700px;
     margin: 20px auto;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    
 }
+
 .formteded label {
     width: 30%;
     display: flex;
 
 }
 
-.formteded input[id=bettingprice],.formteded input[id=oddprice],.formteded input[id=price],.formteded textarea[id=analytic]{
+.formteded input[id=bettingprice],
+.formteded input[id=oddprice],
+.formteded input[id=price],
+.formteded textarea[id=analytic] {
     width: 60%;
     padding: 12px 20px;
     margin: 8px 0px;
     display: flex;
     border: 1px solid #ccc;
     resize: none;
+    border-radius: 5px;
 }
-.formteded select[id=team1],.formteded select[id=team2],.formteded select[id=bettingtype]{
+
+.formteded select[id=team1],
+.formteded select[id=team2],
+.formteded select[id=bettingtype] {
     width: 65%;
     padding: 12px 20px;
     margin: 8px 0px;
     display: flex;
     border: 1px solid #ccc;
+    border-radius: 5px;
 }
+
 @media screen and (max-width: 600px) {
-    .formteded{
+    .formteded {
         width: 100%;
     }
+
     .formteded label {
         width: 100%;
         display: flex;
 
     }
-    .formteded input[id=bettingprice],.formteded input[id=oddprice],.formteded input[id=price],.formteded textarea[id=analytic]{
+
+    .formteded input[id=bettingprice],
+    .formteded input[id=oddprice],
+    .formteded input[id=price],
+    .formteded textarea[id=analytic] {
         width: 100%;
     }
-    .formteded select[id=team1],.formteded select[id=team2],.formteded select[id=bettingtype]{
+
+    .formteded select[id=team1],
+    .formteded select[id=team2],
+    .formteded select[id=bettingtype] {
         width: 100%;
     }
 
@@ -350,81 +416,95 @@ select[id=gender] {
 
 /* teded history */
 
-.datepicker-search{
-  display: flex;
-  flex-direction :row;
-  justify-content: flex-end;
-  align-items: center;
+.datepicker-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
 }
-.datepicker-search input{
+
+.datepicker-search input {
     border-radius: 20px;
     padding: 5px;
 }
 
-.datepicker-search button{
+.datepicker-search button {
     border-radius: 20px;
     padding: 5px 10px;
     border: 1px solid rgb(0, 0, 0);
     background-color: white;
 }
 
-.datepicker-search button:hover{
+.datepicker-search button:hover {
     background-color: rgb(211, 211, 211);
     cursor: pointer;
 }
 
-.teded-history-table{
-    margin-top: 20px;
+.teded-history-table {
+    margin-top: 10px;
     width: 100%;
     border-collapse: collapse;
+    background-color: var(--color-main);
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
 }
-.teded-history-table th{
-    background-color: #0A4700;
+
+.teded-history-table th {
+    background-color: #09470000;
     color: white;
-    padding: 10px 0px 10px 0px;
-    font-size: 13px;
-  }
-  
-  .teded-history-table td{
+    padding: 10px 10px 10px 10px;
+    font-size: 14px;
+}
+
+.teded-history-table td {
     background-color: #EDEDED;
-    padding: 5px 0px 5px 0px;
-    border: 0px;
+    padding: 10px 10px 10px 10px;
     color: black;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     border-bottom: 1px solid rgb(255, 255, 255);
-  }
-  .teded-history-table td textarea{
+}
+
+.teded-history-table td textarea {
     resize: none;
-    width: 150px;
+    width: 120px;
+    height: 30px;
     margin: 0;
-  }
-  @media screen and (max-width: 600px) {
-    .teded-history-table{
+    border-radius: 10px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .teded-history-table {
         display: block;
         overflow: scroll;
     }
 
 
-  }
+}
+
 
 /* teded history */
 
 /* withdraw history */
-.withdraw-history-table{
-    margin-top: 5px;
+.withdraw-history-table {
+    margin-top: 10px;
     width: 100%;
     border-collapse: collapse;
-}
-.withdraw-history-table th{
     background-color: #0A4700;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+.withdraw-history-table th {
+    background-color: #09470000;
     color: white;
     padding: 10px 0px 10px 0px;
     font-size: 16px;
-    width: 33%;
-  }
-  
-  .withdraw-history-table td{
+    width: 100px;
+}
+
+.withdraw-history-table td {
     background-color: #EDEDED;
     padding: 10px 0px 10px 0px;
     border: 0px;
@@ -432,25 +512,37 @@ select[id=gender] {
     font-size: 14px;
     text-align: center;
     border-bottom: 1px solid rgb(255, 255, 255);
-  }
-
+}
+@media screen and (max-width: 600px) {
+    .withdraw-history-table th {
+        font-size: 14px;
+    }
+    .withdraw-history-table td{
+        font-size: 12px;
+        padding: 10px 20px 10px 20px;
+    }
+}
 
 /* withdraw history */
 
 /* predict history */
-.predict-history-table{
-    margin-top: 5px;
+.predict-history-table {
+    margin-top: 10px;
     width: 100%;
     border-collapse: collapse;
-}
-.predict-history-table th{
     background-color: #0A4700;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+.predict-history-table th {
+    background-color: #09470000;
     color: white;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 5px 10px 5px;
     font-size: 16px;
-  }
-  
-  .predict-history-table td{
+}
+
+.predict-history-table td {
     background-color: #EDEDED;
     padding: 10px 5px 10px 5px;
     border: 0px;
@@ -458,58 +550,69 @@ select[id=gender] {
     font-size: 14px;
     text-align: center;
     border-bottom: 1px solid rgb(255, 255, 255);
-  }
-  .predict-history-table td textarea{
+}
+
+.predict-history-table td textarea {
     resize: none;
     width: 150px;
     margin: 0;
-  }
+}
 
 /* predict history */
 
 /* withdraw */
-.withdraw-form{
+.withdraw-form {
     display: flex;
+    padding: 30px 5px;
     width: 600px;
     margin: 20px auto;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-color: rgba(255, 0, 0, 0);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .withdraw-form label {
     width: 30%;
     display: flex;
 }
-.withdraw-form input[id=name],.withdraw-form input[id=lastname]{
+
+.withdraw-form input[id=name],
+.withdraw-form input[id=lastname] {
     width: 15%;
     padding: 12px 20px;
     margin: 8px 0px;
     background-color: white;
     border: none;
 }
-.withdraw-form input[id=bank]{
+
+.withdraw-form input[id=bank] {
     width: 40%;
     padding: 12px 20px;
     margin: 8px 0px;
     background-color: white;
     border: none;
 }
-.withdraw-form input[id=banknum]{
+
+.withdraw-form input[id=banknum] {
     width: 40%;
     padding: 12px 20px;
     margin: 8px 0px;
     background-color: white;
     border: none;
 }
-.withdraw-form input[id=credit]{
+
+.withdraw-form input[id=credit] {
     width: 40%;
     padding: 12px 20px;
     margin: 8px 0px;
     background-color: white;
     border-radius: 20px;
 }
-.submit-withdraw{
+
+.submit-withdraw {
     width: 30%;
     padding: 12px 20px;
     margin: 8px 0px;
@@ -521,5 +624,9 @@ select[id=gender] {
     cursor: pointer;
 }
 
-
+@media screen and (max-width: 600px) {
+    .withdraw-form {
+        width: 100%;
+    }
+}
 /* withdraw */

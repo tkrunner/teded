@@ -2,79 +2,79 @@
 <html lang="en">
 
 <head>
-    <title>FREERANKING</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>FREERANKING</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-    <!-- css main -->
-    <link rel="stylesheet" href="css/main.css">
-    <!-- css main -->
+  <!-- css main -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- css main -->
 
-    <!-- css navbar -->
-    <link rel="stylesheet" href="css/navbar.css">
-    <!-- css navbar -->
+  <!-- css navbar -->
+  <link rel="stylesheet" href="css/navbar.css">
+  <!-- css navbar -->
 
-    <!-- css topmenu -->
-    <link rel="stylesheet" href="css/topmenu.css">
-    <!-- css topmenu -->
+  <!-- css topmenu -->
+  <link rel="stylesheet" href="css/topmenu.css">
+  <!-- css topmenu -->
 
-    <!-- css ranking -->
-    <link rel="stylesheet" href="css/ranking.css">
-    <!-- css ranking -->
+  <!-- css ranking -->
+  <link rel="stylesheet" href="css/ranking.css">
+  <!-- css ranking -->
 </head>
 
 
 <body>
-    <!-- logo login start-->
-    <div class="bg-toptab">
-        <div class="toptab">
-            <div class="toptab-left"><a href="#"><img class="logo-img" src="img/logo.png" alt=""></a></div>
-            <div class="toptab-right">
+  <!-- logo login start-->
+  <div class="bg-toptab">
+    <div class="toptab">
+      <div class="toptab-left"><a href="#"><img class="logo-img" src="img/logo.png" alt=""></a></div>
+      <div class="toptab-right">
 
-                <div class="change-lang">
-                    <a href="#" class="change-lang-button">TH</a>
-                    <a href="#" class="change-lang-button">EN</a>
-                </div>
-                <a class="login-button" onclick="document.getElementById('login').style.display='block'">LOGIN</a>
-
-                <div id="login" class="modal">
-
-                    <form class="modal-content animate" action="/action_page.php" method="post">
-                        <div class="imgcontainer">
-                            <span onclick="document.getElementById('login').style.display='none'" class="close"
-                                title="Close Modal">&times;</span>
-                            <img src="img/img_avatar2.png" alt="" class="avatar">
-                        </div>
-
-                        <div class="login-container">
-                            <label for="uname"><b>Username</b></label>
-                            <input type="text" class="usn-login" placeholder="Enter Username" name="uname" required>
-
-                            <label for="psw"><b>Password</b></label>
-                            <input type="password" class="psw-login" placeholder="Enter Password" name="psw" required>
-
-                            <button type="submit" class="submit-login">Login</button>
-                            <label>
-                                <input type="checkbox" checked="checked" name="remember"> Remember me
-                            </label>
-                        </div>
-
-                        <div class="foot-container" style="background-color:#f1f1f1">
-                            <span class="psw">Forgot <a href="#">password?</a></span>
-                        </div>
-                    </form>
-                </div>
-                <a href="register.html" class="regis-button">REGISTER</a>
-
-            </div>
+        <div class="change-lang">
+          <a href="#" class="change-lang-button">TH</a>
+          <a href="#" class="change-lang-button">EN</a>
         </div>
+        <a class="login-button" onclick="document.getElementById('login').style.display='block'">LOGIN</a>
+
+        <div id="login" class="modal">
+
+          <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('login').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+              <img src="img/img_avatar2.png" alt="" class="avatar">
+            </div>
+
+            <div class="login-container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" class="usn-login" placeholder="Enter Username" name="uname" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" class="psw-login" placeholder="Enter Password" name="psw" required>
+
+              <button type="submit" class="submit-login">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+
+            <div class="foot-container" style="background-color:#f1f1f1">
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+        <a href="register.html" class="regis-button">REGISTER</a>
+
+      </div>
     </div>
-    <!-- logo login end-->
+  </div>
+  <!-- logo login end-->
 
 
   <!-- navbar start-->
@@ -113,327 +113,362 @@
   </div>
   <!-- navbar end-->
 
-  
-    <!-- container-teded start-->
-    <div class="container-ranking">
-        <div class="container-main">
-            <h2 class="freeteded-header">FREE RANKING</h2>
-            <div class="container-main-body">
-              <div class="ranking-table">
-                <h1>TOP BUNDLE ZEAN THIS MONTH</h1>
-                <table class="top5-table">
-                  <thead>
-                    <tr>
-                      <th><svg xmlns="http://www.w3.org/2000/svg" height="24" width="27" viewBox="0 0 576 512"><path fill="#ffae00" d="M309 106c11.4-7 19-19.7 19-34c0-22.1-17.9-40-40-40s-40 17.9-40 40c0 14.4 7.6 27 19 34l-5.8 11.6L209.7 220.6c-9.1 18.2-32.7 23.4-48.6 10.7l-72-57.6L72 160c5-6.7 8-15 8-24c0-22.1-17.9-40-40-40S0 113.9 0 136s17.9 40 40 40c.2 0 .5 0 .7 0l4.4 23.9L86.4 427.4c5.5 30.4 32 52.6 63 52.6H426.6c30.9 0 57.4-22.1 63-52.6l41.4-227.5 4.4-23.9c.2 0 .5 0 .7 0c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40c0 9 3 17.3 8 24l-17.1 13.7-72 57.6c-15.9 12.7-39.5 7.5-48.6-10.7L314.8 117.7 309 106zM133.7 418.9L102.2 245.6l28.9 23.1c39.8 31.8 98.8 18.9 121.5-26.7L288 171.3l35.4 70.7c22.8 45.6 81.8 58.5 121.5 26.7l28.9-23.1L442.3 418.9c-1.4 7.6-8 13.1-15.7 13.1H149.4c-7.7 0-14.4-5.5-15.7-13.1z"/></svg></th>
-                      <th>ZEAN</th>
-                      <th>PROFITS</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td><a href="zean-info.html">FREDRIK KNUDSEN</a></td>
-                      <td>608.00</td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td> <a href="zean-info.html">MAX STEPHENS</a></td>
-                      <td>588.50</td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td> <a href="zean-info.html">GASTÃ²N ROBLES</a></td>
-                      <td>569.50</td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td> <a href="zean-info.html">GJORGJI ENDLIHER</a></td>
-                      <td>552.00</td>
-                    </tr>
-                    <tr>
-                      <td>5</td>
-                      <td> <a href="zean-info.html">CAYDEN MILLER</a></td>
-                      <td>466.00</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
 
-            </div>
-            <h2 class="freeteded-header">FREE Zean Leaderboard</h2>
-            <div class="container-main-body">
-                <form action="">
-                    <div class="select-time">
-                        <select name="" id="" style="padding: 5px 50px 5px 5px; border-radius: 10px;">
-                        <option value="week">This week</option>
-                        <option value="month">This month</option>
-                        <option value="year">This year</option>
-                        <option value="alltime">All time</option>
-                      </select>
-                      <button type="submit" class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" height="10" width="10"
-                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-                        <path fill="#000000"
-                          d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
-                      </svg></button>
-                      <div>From December 09, 2023 until December 16, 2023</div>
-                      
-                    </div>
-                </form>
-                
-                <div class="ranking-table">
-                  <h1>FREE ZEAN LEADERBOARD</h1>
-                  <table class="all-zean-table">
-                    <thead>
-                        <tr>
-                            <th>POS</th>
-                            <th>ZEAN NAME</th>
-                            <th>NO. TIPS</th>
-                            <th>HIT</th>
-                            <th>PROFITS</th>
-                            <th></th>
-                            <th></th>
-                          </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td><a href="zean-info.html">FREDRIK KNUDSEN</a></td>
-                          <td>28</td>
-                          <td>89.29%</td>
-                          <td>+240.50</td>
-                          <td><button class="followbutton">FOLLOW</button></td>
-                          <td><button class="viewmorebutton">VIEW MORE</button></td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td><a href="zean-info.html">MAX STEPHENS</a></td>
-                          <td>28</td>
-                          <td>89.29%</td>
-                          <td>+240.50</td>
-                          <td><button class="followbutton">FOLLOW</button></td>
-                          <td><button class="viewmorebutton">VIEW MORE</button></td>
-                        </tr>
-                        <tr>
-                          <td>3</td>
-                          <td><a href="zean-info.html">MAX STEPHENS</a></td>
-                          <td>28</td>
-                          <td>89.29%</td>
-                          <td>+240.50</td>
-                          <td><button class="followbutton">FOLLOW</button></td>
-                          <td><button class="viewmorebutton">VIEW MORE</button></td>
-                        </tr>
-                        <tr>
-                          <td>4</td>
-                          <td><a href="zean-info.html">MAX STEPHENS</a></td>
-                          <td>28</td>
-                          <td>89.29%</td>
-                          <td>+240.50</td>
-                          <td><button class="followbutton">FOLLOW</button></td>
-                          <td><button class="viewmorebutton">VIEW MORE</button></td>
-                        </tr>
-                        <tr>
-                          <td>5</td>
-                          <td><a href="zean-info.html">MAX STEPHENS</a></td>
-                          <td>28</td>
-                          <td>89.29%</td>
-                          <td>+240.50</td>
-                          <td><button class="followbutton">FOLLOW</button></td>
-                          <td><button class="viewmorebutton">VIEW MORE</button></td>
-                        </tr>
-                        <tr>
-                          <td>6</td>
-                          <td><a href="zean-info.html">MAX STEPHENS</a></td>
-                          <td>28</td>
-                          <td>89.29%</td>
-                          <td>+240.50</td>
-                          <td><button class="followbutton">FOLLOW</button></td>
-                          <td><button class="viewmorebutton">VIEW MORE</button></td>
-                        </tr>
-                        <tr>
-                          <td>7</td>
-                          <td><a href="zean-info.html">MAX STEPHENS</a></td>
-                          <td>28</td>
-                          <td>89.29%</td>
-                          <td>+240.50</td>
-                          <td><button class="followbutton">FOLLOW</button></td>
-                          <td><button class="viewmorebutton">VIEW MORE</button></td>
-                        </tr>
-                        <tr>
-                          <td>8</td>
-                          <td><a href="zean-info.html">MAX STEPHENS</a></td>
-                          <td>28</td>
-                          <td>89.29%</td>
-                          <td>+240.50</td>
-                          <td><button class="followbutton">FOLLOW</button></td>
-                          <td><button class="viewmorebutton">VIEW MORE</button></td>
-                        </tr>
-                      </tbody>
-                  </table>
-                </div>
-  
-              </div>
-
-
-            
+  <!-- container-teded start-->
+  <div class="container-ranking">
+    <div class="container-main">
+      <h2 class="freeteded-header">FREE RANKING</h2>
+      <div class="container-main-body">
+        <div class="ranking-table">
+          <h1>TOP BUNDLE ZEAN THIS MONTH</h1>
+          <table class="top5-table">
+            <thead>
+              <tr>
+                <th><svg xmlns="http://www.w3.org/2000/svg" height="24" width="27" viewBox="0 0 576 512">
+                    <path fill="#ffae00"
+                      d="M309 106c11.4-7 19-19.7 19-34c0-22.1-17.9-40-40-40s-40 17.9-40 40c0 14.4 7.6 27 19 34l-5.8 11.6L209.7 220.6c-9.1 18.2-32.7 23.4-48.6 10.7l-72-57.6L72 160c5-6.7 8-15 8-24c0-22.1-17.9-40-40-40S0 113.9 0 136s17.9 40 40 40c.2 0 .5 0 .7 0l4.4 23.9L86.4 427.4c5.5 30.4 32 52.6 63 52.6H426.6c30.9 0 57.4-22.1 63-52.6l41.4-227.5 4.4-23.9c.2 0 .5 0 .7 0c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40c0 9 3 17.3 8 24l-17.1 13.7-72 57.6c-15.9 12.7-39.5 7.5-48.6-10.7L314.8 117.7 309 106zM133.7 418.9L102.2 245.6l28.9 23.1c39.8 31.8 98.8 18.9 121.5-26.7L288 171.3l35.4 70.7c22.8 45.6 81.8 58.5 121.5 26.7l28.9-23.1L442.3 418.9c-1.4 7.6-8 13.1-15.7 13.1H149.4c-7.7 0-14.4-5.5-15.7-13.1z" />
+                  </svg></th>
+                <th>ZEAN</th>
+                <th>PROFITS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td><a href="zean-info.html">FREDRIK KNUDSEN</a></td>
+                <td>608.00</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td> <a href="zean-info.html">MAX STEPHENS</a></td>
+                <td>588.50</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td> <a href="zean-info.html">GASTÃ²N ROBLES</a></td>
+                <td>569.50</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td> <a href="zean-info.html">GJORGJI ENDLIHER</a></td>
+                <td>552.00</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td> <a href="zean-info.html">CAYDEN MILLER</a></td>
+                <td>466.00</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        
 
+      </div>
+      <h2 class="freeteded-header">FREE Zean Leaderboard</h2>
+      <div class="container-main-body">
+        <form action="">
+          <div class="select-time">
+            <select name="" id="" style="padding: 5px 50px 5px 5px; border-radius: 10px;">
+              <option value="week">This week</option>
+              <option value="month">This month</option>
+              <option value="year">This year</option>
+              <option value="alltime">All time</option>
+            </select>
+            <button type="submit" class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" height="10" width="10"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                <path fill="#000000"
+                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+              </svg></button>
+            <div>From December 09, 2023 until December 16, 2023</div>
 
+          </div>
+        </form>
 
-        <div class="container-credit">
-            <h2 class="freeteded-header">CREDIT PACK</h2>
-            <div class="side-creditpack">
-                <ul>
-                    <li>
-                        <span class="cp-left">
-                            <div class="h1">150<b>Credits</b></div>
-                            <div class="h2">Starter </div>
-                        </span>
-
-                        <span class="cp-right">
-                            <p>$150</p>
-                            <a href="#">Purchase Now</a>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="cp-left">
-                            <div class="h1">500<b>Credits</b></div>
-                            <div class="h2">Professional Kit</div>
-                        </span>
-
-                        <span class="cp-right">
-                            <p>$500</p>
-                            <a href="#">Purchase Now</a>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="cp-left">
-                            <div class="h1">1000<b>Credits</b></div>
-                            <div class="h2">Beginner Kit</div>
-                        </span>
-
-                        <span class="cp-right">
-                            <p>$1000</p>
-                            <a href="#">Purchase Now</a>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="cp-left">
-                            <div class="h1">1500<b>Credits</b></div>
-                            <div class="h2">1500 Credits Pack</div>
-                        </span>
-
-                        <span class="cp-right">
-                            <p>$1500</p>
-                            <a href="#">Purchase Now</a>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="cp-left">
-                            <div class="h1">3000<b>Credits</b></div>
-                            <div class="h2">High Roller</div>
-                        </span>
-
-                        <span class="cp-right">
-                            <p>$3000</p>
-                            <a href="#">Purchase Now</a>
-                        </span>
-                    </li>
-
-                </ul>
-            </div>
+        <div class="ranking-table">
+          <h1>FREE ZEAN LEADERBOARD</h1>
+          <table class="all-zean-table">
+            <thead>
+              <tr>
+                <th>POS</th>
+                <th>ZEAN NAME</th>
+                <th>NO. TIPS</th>
+                <th>HIT</th>
+                <th>PROFITS</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td><a href="zean-info.html">FREDRIK KNUDSEN</a></td>
+                <td>28</td>
+                <td>89.29%</td>
+                <td>+240.50</td>
+                <td><button class="followbutton"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="20"
+                      viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM504 312V248H440c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V136c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H552v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
+                    </svg></button></td>
+                <td><button onclick="document.location='zean-info.html'" class="viewmorebutton">VIEW MORE</button></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><a href="zean-info.html">MAX STEPHENS</a></td>
+                <td>28</td>
+                <td>89.29%</td>
+                <td>+240.50</td>
+                <td><button class="followbutton"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="20"
+                      viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM504 312V248H440c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V136c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H552v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
+                    </svg></button></td>
+                <td><button onclick="document.location='zean-info.html'" class="viewmorebutton">VIEW MORE</button></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td><a href="zean-info.html">MAX STEPHENS</a></td>
+                <td>28</td>
+                <td>89.29%</td>
+                <td>+240.50</td>
+                <td><button class="followbutton"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="20"
+                      viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM504 312V248H440c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V136c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H552v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
+                    </svg></button></td>
+                <td><button onclick="document.location='zean-info.html'" class="viewmorebutton">VIEW MORE</button></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td><a href="zean-info.html">MAX STEPHENS</a></td>
+                <td>28</td>
+                <td>89.29%</td>
+                <td>+240.50</td>
+                <td><button class="followbutton"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="20"
+                      viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM504 312V248H440c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V136c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H552v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
+                    </svg></button></td>
+                <td><button onclick="document.location='zean-info.html'" class="viewmorebutton">VIEW MORE</button></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td><a href="zean-info.html">MAX STEPHENS</a></td>
+                <td>28</td>
+                <td>89.29%</td>
+                <td>+240.50</td>
+                <td><button class="followbutton"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="20"
+                      viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM504 312V248H440c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V136c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H552v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
+                    </svg></button></td>
+                <td><button onclick="document.location='zean-info.html'" class="viewmorebutton">VIEW MORE</button></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td><a href="zean-info.html">MAX STEPHENS</a></td>
+                <td>28</td>
+                <td>89.29%</td>
+                <td>+240.50</td>
+                <td><button class="followbutton"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="20"
+                      viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM504 312V248H440c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V136c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H552v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
+                    </svg></button></td>
+                <td><button onclick="document.location='zean-info.html'" class="viewmorebutton">VIEW MORE</button></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td><a href="zean-info.html">MAX STEPHENS</a></td>
+                <td>28</td>
+                <td>89.29%</td>
+                <td>+240.50</td>
+                <td><button class="followbutton"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="20"
+                      viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM504 312V248H440c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V136c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H552v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
+                    </svg></button></td>
+                <td><button onclick="document.location='zean-info.html'" class="viewmorebutton">VIEW MORE</button></td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td><a href="zean-info.html">MAX STEPHENS</a></td>
+                <td>28</td>
+                <td>89.29%</td>
+                <td>+240.50</td>
+                <td><button class="followbutton"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="20"
+                      viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM504 312V248H440c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V136c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H552v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
+                    </svg></button></td>
+                <td><button onclick="document.location='zean-info.html'" class="viewmorebutton">VIEW MORE</button></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+
+      </div>
+
+
+
     </div>
-    <!-- container-teded end -->
+
+
+
+
+    <div class="container-credit">
+      <h2 class="freeteded-header">CREDIT PACK</h2>
+      <div class="side-creditpack">
+        <ul>
+          <li>
+            <span class="cp-left">
+              <div class="h1">150<b>Credits</b></div>
+              <div class="h2">Starter </div>
+            </span>
+
+            <span class="cp-right">
+              <p>$150</p>
+              <a href="#">Purchase Now</a>
+            </span>
+          </li>
+          <li>
+            <span class="cp-left">
+              <div class="h1">500<b>Credits</b></div>
+              <div class="h2">Professional Kit</div>
+            </span>
+
+            <span class="cp-right">
+              <p>$500</p>
+              <a href="#">Purchase Now</a>
+            </span>
+          </li>
+          <li>
+            <span class="cp-left">
+              <div class="h1">1000<b>Credits</b></div>
+              <div class="h2">Beginner Kit</div>
+            </span>
+
+            <span class="cp-right">
+              <p>$1000</p>
+              <a href="#">Purchase Now</a>
+            </span>
+          </li>
+          <li>
+            <span class="cp-left">
+              <div class="h1">1500<b>Credits</b></div>
+              <div class="h2">1500 Credits Pack</div>
+            </span>
+
+            <span class="cp-right">
+              <p>$1500</p>
+              <a href="#">Purchase Now</a>
+            </span>
+          </li>
+          <li>
+            <span class="cp-left">
+              <div class="h1">3000<b>Credits</b></div>
+              <div class="h2">High Roller</div>
+            </span>
+
+            <span class="cp-right">
+              <p>$3000</p>
+              <a href="#">Purchase Now</a>
+            </span>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- container-teded end -->
 
 
 
 
 
-    <!-- footer -->
-    <footer>
-        <div class="footer">
-            <div class="footer-desc">
-                <a href="#"><img class="logo-img-footer" src="img/logo.png" alt=""></a>
-                <div>เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zeanเว็บ
-                    teded
-                    zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean</div>
-            </div>
+  <!-- footer -->
+  <footer>
+    <div class="footer">
+      <div class="footer-desc">
+        <a href="#"><img class="logo-img-footer" src="img/logo.png" alt=""></a>
+        <div>เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zeanเว็บ
+          teded
+          zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean</div>
+      </div>
 
-            <div class="footer-link">
-                <div>
-                    <p>USEFUL LINKS</p>
-                    <ul>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p>Zean</p>
-                    <ul>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p>OPPORTUNITY</p>
-                    <ul>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p>TEDED ZEAN</p>
-                    <ul>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p>CUSTOMER SUPPORT</p>
-                    <ul>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                    </ul>
-                </div>
-
-            </div>
+      <div class="footer-link">
+        <div>
+          <p>USEFUL LINKS</p>
+          <ul>
+            <li><a href="#">ยูฟ่าเบท</a></li>
+            <li><a href="#">ยูฟ่าเบท</a></li>
+            <li><a href="#">ยูฟ่าเบท</a></li>
+            <li><a href="#">ยูฟ่าเบท</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>Zean</p>
+          <ul>
+            <li><a href="#">ยูฟ่าเบท</a></li>
+            <li><a href="#">ยูฟ่าเบท</a></li>
+            <li><a href="#">ยูฟ่าเบท</a></li>
+            <li><a href="#">ยูฟ่าเบท</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>OPPORTUNITY</p>
+          <ul>
+            <li><a href="#">ยูฟ่าเบท</a></li>
+            <li><a href="#">ยูฟ่าเบท</a></li>
+            <li><a href="#">ยูฟ่าเบท</a></li>
+            <li><a href="#">ยูฟ่าเบท</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>TEDED ZEAN</p>
+          <ul>
+            <li><a href="#">ยูฟ่าเบท</a></li>
+            <li><a href="#">ยูฟ่าเบท</a></li>
+            <li><a href="#">ยูฟ่าเบท</a></li>
+            <li><a href="#">ยูฟ่าเบท</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>CUSTOMER SUPPORT</p>
+          <ul>
+            <li><a href="#">ยูฟ่าเบท</a></li>
+            <li><a href="#">ยูฟ่าเบท</a></li>
+            <li><a href="#">ยูฟ่าเบท</a></li>
+            <li><a href="#">ยูฟ่าเบท</a></li>
+          </ul>
         </div>
 
-    </footer>
-    <!-- footer -->
+      </div>
+    </div>
+
+  </footer>
+  <!-- footer -->
 
 
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
 
-        // Get the modal
-        var modal = document.getElementById('login');
+    // Get the modal
+    var modal = document.getElementById('login');
 
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
 </body>
 
 </html>

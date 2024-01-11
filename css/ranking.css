@@ -19,6 +19,13 @@
   border-bottom: 2px solid rgb(37, 37, 37);
   font-weight: 600;
 }
+a{
+  color: var(--color-main);
+  text-decoration: none;
+}
+a:hover{
+  color: var(--color-second);
+}
 
 .zeanname {
   text-decoration-line: underline;
@@ -37,8 +44,14 @@
 }
 
 .top5-table {
-  width: 100%;
-  padding: 0px 40px 0px 40px;
+  width: 500px;
+  margin: auto;
+}
+@media screen and (max-width:600px) {
+  .top5-table {
+    width: 100%;
+    padding: 15px;
+  }
 }
 
 .select-time {
@@ -58,43 +71,70 @@
 }
 
 .all-zean-table th{
-  background-color: var(--color-main);
+  
     color: white;
-    padding: 8px 10px;
-    font-size: 12px;
-    border: 1px solid rgb(0, 100, 22);
-    background-image: linear-gradient(180deg,#003806 60%,#002e05 80%,#001d03 100%);
-    border-radius: 4px;
+    padding: 15px 10px;
+    font-size: 16px;
+    
 }
 
 .all-zean-table td{
-  padding: 10px 0px 10px 0px;
-  font-size: 16px;
-  border-bottom: 2px solid rgb(37, 37, 37);
+  padding: 10px 10px 10px 10px;
+  font-size: 14px;
+  border-bottom: 2px solid rgb(255, 255, 255);
   text-align: center;
+  background-color: rgb(228, 228, 228);
 }
 
 .all-zean-table{
   width: 100%;
 padding: 0px 40px;
+border-collapse: collapse;
+background-color: var(--color-main);
+border-radius: 10px;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+@media screen and (max-width:600px) {
+  .all-zean-table{
+    padding: 0px;
+    width: 100%;
+    display: block;
+    overflow: scroll;
+  }
 }
 
 .followbutton{
   padding:5px 5px 5px 5px;
   border:3px solid #0A4700;
   border-radius: 5px;
-  color: #0A4700;
+  fill: #0A4700;
   background-color: rgba(255, 0, 0, 0);
-  font-weight: 600;
-  width: 90%;
+  width: 100%;
+  
 
 }
+
+.followbutton:hover{
+  background-color: #0A4700;
+  fill: white;
+  cursor: pointer;
+}
+
 .viewmorebutton{
-  padding:5px 5px 5px 5px;
+  padding:7px 5px 7px 5px;
   border:3px solid #000000;
   border-radius: 5px;
   color: #000000;
   background-color: rgba(255, 0, 0, 0);
   font-weight: 600;
-  width: 90%;
+  width: 100%;
+  
+}
+
+.viewmorebutton:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
 }

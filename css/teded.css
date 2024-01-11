@@ -31,10 +31,14 @@
     margin-top: 20px;
     width: 100%;
     overflow: scroll;
+    background-color: var(--color-main);
+    border-radius: 10px;
+    border-collapse: collapse;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
 }
 
 .teded-table th {
-    background-color: #0A4700;
+    background-color: rgba(255, 255, 255, 0);
     color: white;
     padding: 10px 0px 10px 0px;
 }
@@ -44,6 +48,7 @@
     padding: 10px 5px 10px 15px;
     border: 0px;
     color: black;
+    border-bottom: 1px solid rgb(214, 214, 214);
 }
 
 td a {
@@ -67,25 +72,27 @@ td a:hover {
 
 .bt-purchase {
     background-color: #ffffff00;
-    border: 3px solid #089216;
-    color: #089216;
+    border: 3px solid var(--color-main);
+    color: var(--color-main);
     border-radius: 10px;
     padding: 3px 20px 3px 20px;
 
 }
 
 .bt-purchase:hover {
-    background-color: #089216;
+    background-color: var(--color-main);
     color: white;
-    border: 3px solid #089216;
+    border: 3px solid var(--color-main);
+    cursor: pointer;
 }
 
 .bt-purchase.active {
-    background-color: #089216;
+    background-color: var(--color-main);
     color: white;
-    border: 3px solid #089216;
+    border: 3px solid var(--color-main);
     cursor: auto;
 }
+
 
 
 /* table */
