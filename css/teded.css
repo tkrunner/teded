@@ -32,7 +32,7 @@
     border-radius: 10px;
     border-collapse: collapse;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
-    
+        overflow: scroll;
 
 }
 
@@ -98,7 +98,6 @@ td a:hover {
     .teded-table {
         display: block;
         overflow: scroll;
-        width: 100%;
     }
 }
 

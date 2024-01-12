@@ -46,18 +46,29 @@ a:hover{
   border-radius: 10px;
 }
 
+
 .top5-table {
   width: 500px;
   margin: auto;
 }
+
 @media screen and (max-width:840px) {
   .top5-table {
     width: 100%;
-    padding: 15px;
+    padding: 20px;
   }
   .top5-table a{
     font-size: 12px;
     white-space: nowrap; /*  ทำให้ตัวหนังสือไม่ตกบรรทัด */
+  }
+  .top5-table th ,.top5-table td{
+    font-size: 10px !important;
+  }
+}
+@media screen and (max-width:380px){
+  .top5-table{
+    display: block;
+    overflow: scroll;
   }
 }
 
