@@ -33,8 +33,8 @@
 
 <body>
 
-  <!-- logo login start-->
-  <div class="bg-toptab">
+   <!-- logo login start-->
+   <div class="bg-toptab">
     <div class="toptab">
       <div class="toptab-left"><a href="#"><img class="logo-img" src="img/logo.png" alt=""></a></div>
       <div class="toptab-right">
@@ -43,11 +43,11 @@
           <a href="#" class="change-lang-button">TH</a>
           <a href="#" class="change-lang-button">EN</a>
         </div>
-        <a class="login-button" onclick="document.getElementById('login').style.display='block'">LOGIN</a>
+        <a class="login-button" onclick="document.getElementById('login').style.display='block'">ล็อกอิน</a>
 
         <div id="login" class="modal">
 
-          <form class="modal-content animate" action="/action_page.php" method="post">
+          <form class="modal-content animate" action="edit-zean-home.html" method="">
             <div class="imgcontainer">
               <span onclick="document.getElementById('login').style.display='none'" class="close"
                 title="Close Modal">&times;</span>
@@ -55,24 +55,24 @@
             </div>
 
             <div class="login-container">
-              <label for="uname"><b>Username</b></label>
-              <input type="text" class="usn-login" placeholder="Enter Username" name="uname" required>
+              <label for="uname"><b>ชื่อผู้ใช้</b></label>
+              <input type="text" class="usn-login" placeholder="กรอกชื่อผู้ใช้" name="uname" required>
 
-              <label for="psw"><b>Password</b></label>
-              <input type="password" class="psw-login" placeholder="Enter Password" name="psw" required>
+              <label for="psw"><b>รหัสผ่าน</b></label>
+              <input type="password" class="psw-login" placeholder="กรอกรหัสผ่าน" name="psw" required>
 
-              <button type="submit" class="submit-login">Login</button>
+              <button type="submit" class="submit-login">ล็อกอิน</button>
               <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
+                <input type="checkbox" checked="checked" name="remember"> จดจำฉันไว้ในระบบ
               </label>
             </div>
 
             <div class="foot-container" style="background-color:#f1f1f1">
-              <span class="psw">Forgot <a href="#">password?</a></span>
+              <span class="psw">ลืม <a href="#">รหัสผ่าน?</a></span>
             </div>
           </form>
         </div>
-        <a href="register.html" class="regis-button">REGISTER</a>
+        <a href="register.html" class="regis-button">สมัครสมาชิก</a>
 
       </div>
     </div>
@@ -109,8 +109,20 @@
         <a href="bundle-ranking.html">Bundle Ranking</a>
         <a href="premium-ranking.html">Premium Ranking</a>
       </div>
+     
     </div>
-
+    <a href="#">
+      ข่าวสาร
+    </a>
+    <a href="#">
+      บทวิเคราะห์
+    </a>
+    <a href="#">
+      เกี่ยวกับเรา
+    </a>
+    <a href="#">
+      ติดต่อเรา
+    </a>
 
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
@@ -120,26 +132,26 @@
   <!-- container-info start-->
   <div class="container-info">
     <div class="container-main">
-      <h2 class="freeteded-header">INFO</h2>
+      <h2 class="freeteded-header">ข้อมูลเซียน</h2>
       <div class="container-main-info">
         <img class="profile-logo" src="img/football.png" alt="">
         <div class="info">
           <h3>FREDRIK KNUDSEN</h3>
           <span>BUNDLE ZEAN</span>
-          <button class="follow-button">FOLLOW</button>
+          <button class="follow-button">ติดตาม</button>
         </div>
         <div class="detail">
           <div class="zeaninfo-follower">
             <strong>46</strong>
-            <p>FOLLOWERS</p>
+            <p>ผู้ติดตาม</p>
           </div>
           <div class="zeaninfo-bettingtips">
             <strong>5818</strong>
-            <p>BETTING TIPS</p>
+            <p>จำนวนทีเด็ด</p>
           </div>
           <div class="zeaninfo-profits">
             <strong>+45547.00</strong>
-            <p>PROFITS</p>
+            <p>แต้มสะสม</p>
           </div>
         </div>
       </div>
@@ -154,7 +166,7 @@
         
         <div id="Profile" class="tabcontent">
           <h3>BIO SUMMARY</h3>
-          <p>ผมเป็นคน</p>
+          <p>BIO SUMMARY</p>
         </div>
         
         <div id="Performance" class="tabcontent">
@@ -167,16 +179,16 @@
 
       <br>
       <div class="container-main-info-noflex">
-        <h1>RUNNING TIPS</h1>
+        <h1>ทีเด็ดตอนนี้</h1>
         <table class="runningtips-table">
           <thead>
             <tr>
-              <th>DATE</th>
-              <th id="event">EVENT</th>
-              <th>BETTING TYPE</th>
-              <th>RESULT</th>
-              <th>BUY</th>
-              <th>ANALYTIC</th>
+              <th>วันที่</th>
+              <th id="event">กิจกรรม</th>
+              <th>ประเภท</th>
+              <th>ผลลัพธ์</th>
+              <th>ซื้อ</th>
+              <th>ทรรศนะ</th>
             </tr>
           </thead>
           <tbody>
@@ -189,7 +201,7 @@
               </td>
               <td>Total goal <br> FullTime</td>
               <td>07:25:55 <br> Until Kick Off</td>
-              <td><button class="purchase-button">PURCHASE BUNDLE</button></td>
+              <td><button class="purchase-button">ซื้อทีเด็ด</button></td>
               <td><textarea disabled class="analytic-area" name="" id="" cols="15" rows="2">ฟันธงรองชรูว์สบิวรี่ ขี่ได้ แน่นอน</textarea></td>
             </tr>
             <tr>
@@ -201,7 +213,7 @@
               </td>
               <td>Total goal <br> FullTime</td>
               <td>07:25:55 <br> Until Kick Off</td>
-              <td><button class="purchase-button">PURCHASE BUNDLE</button></td>
+              <td><button class="purchase-button">ซื้อทีเด็ด</button></td>
               <td><textarea disabled class="analytic-area" name="" id="" cols="15" rows="2">ฟันธงรองชรูว์สบิวรี่ ขี่ได้ แน่นอน</textarea></td>
             </tr>
           </tbody>
@@ -214,18 +226,18 @@
       </div>
       <br>
       <div class="container-main-info-noflex">
-        <h1>HISTORY</h1>
+        <h1>ประวัติทีเด็ด</h1>
         <table class="history-table">
           <thead>
             <tr>
-              <th>DATE</th>
-              <th id="event">EVENT</th>
-              <th>BETTING TYPE</th>
-              <th>TIPS</th>
-              <th>ODDS</th>
+              <th>วันที่</th>
+              <th id="event">กิจกรรม</th>
+              <th>ประเภท</th>
+              <th>ทายผล</th>
+              <th>อัตราต่อรอง</th>
               <th>WAGER</th>
-              <th>PLUS</th>
-              <th>RESULT</th>
+              <th>แต้ม</th>
+              <th>ผลลัพธ์</th>
             </tr>
           </thead>
           <tbody>
@@ -372,67 +384,58 @@
 
 
    <!-- footer -->
-   <footer>
+  <footer>
     <div class="footer">
-        <div class="footer-desc">
-            <a href=""><img class="logo-img-footer" src="img/logo.png" alt=""></a>
-            <div>เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zeanเว็บ
-                teded
-                zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean</div>
+      <div class="footer-desc">
+        <a href=""><img class="logo-img-footer" src="img/logo.png" alt=""></a>
+        <div>เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zeanเว็บ teded
+          zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean</div>
+      </div>
+
+      <div class="footer-link">
+        <div>
+          <p>USEFUL LINKS</p>
+          <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="news.html">ข่าวสาร</a></li>
+            <li><a href="about-us.html">เกี่ยวกับเรา</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>Zean</p>
+          <ul>
+            <li><a href="free-ranking.html">Free Ranking</a></li>
+            <li><a href="bundle-ranking.html">Bundle Ranking</a></li>
+            <li><a href="premium-ranking.html">Premium Ranking</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>OPPORTUNITY</p>
+          <ul>
+            <li><a href="analytic.html">บทวิเคราะห์</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>TEDED ZEAN</p>
+          <ul>
+            <li><a href="free-teded.html">Free Teded</a></li>
+            <li><a href="bundle-teded.html">Bundle Teded</a></li>
+            <li><a href="premium-teded.html">Premium Teded</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>CUSTOMER SUPPORT</p>
+          <ul>
+            <li><a href="contact-us.html">ติดต่อเรา</a></li>
+            <li><a href="about-us.html">เกี่ยวกับเรา</a></li>
+          </ul>
         </div>
 
-        <div class="footer-link">
-            <div>
-                <p>USEFUL LINKS</p>
-                <ul>
-                    <li><a href="#">ยูฟ่าเบท</a></li>
-                    <li><a href="#">ยูฟ่าเบท</a></li>
-                    <li><a href="#">ยูฟ่าเบท</a></li>
-                    <li><a href="#">ยูฟ่าเบท</a></li>
-                </ul>
-            </div>
-            <div>
-                <p>Zean</p>
-                <ul>
-                    <li><a href="#">ยูฟ่าเบท</a></li>
-                    <li><a href="#">ยูฟ่าเบท</a></li>
-                    <li><a href="#">ยูฟ่าเบท</a></li>
-                    <li><a href="#">ยูฟ่าเบท</a></li>
-                </ul>
-            </div>
-            <div>
-                <p>OPPORTUNITY</p>
-                <ul>
-                    <li><a href="#">ยูฟ่าเบท</a></li>
-                    <li><a href="#">ยูฟ่าเบท</a></li>
-                    <li><a href="#">ยูฟ่าเบท</a></li>
-                    <li><a href="#">ยูฟ่าเบท</a></li>
-                </ul>
-            </div>
-            <div>
-                <p>TEDED ZEAN</p>
-                <ul>
-                    <li><a href="#">ยูฟ่าเบท</a></li>
-                    <li><a href="#">ยูฟ่าเบท</a></li>
-                    <li><a href="#">ยูฟ่าเบท</a></li>
-                    <li><a href="#">ยูฟ่าเบท</a></li>
-                </ul>
-            </div>
-            <div>
-                <p>CUSTOMER SUPPORT</p>
-                <ul>
-                    <li><a href="#">ยูฟ่าเบท</a></li>
-                    <li><a href="#">ยูฟ่าเบท</a></li>
-                    <li><a href="#">ยูฟ่าเบท</a></li>
-                    <li><a href="#">ยูฟ่าเบท</a></li>
-                </ul>
-            </div>
-
-        </div>
+      </div>
     </div>
 
-</footer>
-<!-- footer -->
+  </footer>
+  <!-- footer -->
 
 
 <script>

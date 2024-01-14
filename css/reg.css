@@ -6,26 +6,28 @@
     width: 100%;
     background: #ffffff;
     display: flex;
-    margin: auto;
+    margin: 50px auto;
     max-width: 1400px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 50px 0px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    border-radius: 20px;
 }
 
 .pricing-card-1 {
     width: 300px;
     padding: 30px;
-    background: var(--color-second);
     text-align: center;
-    border-radius: 12px;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0px 8px 16px 0px var(--color-second);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     position: relative;
     margin: 10px;
     height: 100%;
+    background-color: #edffea;
+    background-image: var(--color-bg-img-second);
 }
 
 .pricing-card-1 .title {
@@ -41,14 +43,7 @@
 }
 
 .pricing-card-1 span {
-    font-size: 1.2rem;
-}
-
-.pricing-card-1 .description {
-    color: #000000;
-    font-size: 1.1rem;
-    margin: 20px 0 20px;
-    
+    font-size: .8rem;
 }
 
 
@@ -62,15 +57,15 @@
 
 
 
-
 .pricing-card-2 {
     width: 300px;
     padding: 30px;
-    background: var(--color-main);
+    background: #073500;
+    background-image: var(--color-bg-img);
     text-align: center;
-    border-radius: 12px;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0px 8px 16px 0px var(--color-main);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     position: relative;
     margin: 10px;
     height: 100%
@@ -90,14 +85,9 @@
 }
 
 .pricing-card-2 span {
-    font-size: 1.2rem;
+    font-size: .8rem;
 }
 
-.pricing-card-2 .description {
-    color: #ffffff;
-    font-size: 1.1rem;
-    margin: 20px 0 20px;
-}
 
 .pricing-card-2 .offer {
     display: block;
@@ -106,29 +96,52 @@
     margin-top: 25px;
 }
 .ribbon-wrap .ribbon{
-    background-color: rgb(25, 145, 1);
+    background-image: linear-gradient( 135deg, #FDEB71 10%, #F8D800 100%);
+    color: rgb(0, 0, 0);
     font-weight: 600;
 }
 
 
 
-.subscribe-button {
+.pricing-card-1 .subscribe-button {
     display: inline-block;
     padding: 15px 0;
-    background-color: rgb(25, 145, 1);
-    color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+    color: #000000;
     text-decoration: none;
     border-radius: 30px;
     font-size: 1.2rem;
     margin-top: 40px;
     width: 100%;
-    font-weight: 500;
+    font-weight: 600;
+    transition: 0.2s ease;
+    border: 3px solid black;
+}
+
+.pricing-card-1 .subscribe-button:hover {
+    background: rgb(0, 0, 0);
+    box-shadow: 0px 0px 16px 0px #000000;
+    color: white;
+}
+
+.pricing-card-2 .subscribe-button {
+    display: inline-block;
+    padding: 15px 0;
+    background-image: linear-gradient( 135deg, #FDEB71 10%, #F8D800 100%);
+    color: #000000;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    margin-top: 40px;
+    width: 100%;
+    font-weight: 600;
     transition: 0.2s ease;
 }
 
-.subscribe-button:hover {
-    background: rgb(19, 116, 0);
+.pricing-card-2 .subscribe-button:hover {
+    box-shadow: 0px 0px 16px 0px #FFC01F;
 }
+
 
 .ribbon-wrap {
     width: 150px;
@@ -182,7 +195,7 @@ input[id=uname], input[id=psw],input[id=psw-repeat],input[id=lname],select[id=ba
     font-family: 'sarabun', sans-serif;
   }
 
-  button[type=submit]{
+  .formregis button[type=submit]{
     background-color: #0A4700;
     color: white;
     padding: 14px 20px;
@@ -198,3 +211,45 @@ input[id=uname], input[id=psw],input[id=psw-repeat],input[id=lname],select[id=ba
     }
   }
 /* formregis */
+
+/* list */
+
+.pricing-card-1 .table-list{
+    display: flex;
+    width: 100%;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    line-height: 0.5;
+}
+
+.pricing-card-1 .table-list span svg{
+    margin-right: 10px;
+}
+
+.pricing-card-1 .table-list span svg{
+    color: green;
+}
+
+.pricing-card-2 .table-list{
+    display: flex;
+    width: 100%;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    line-height: 0.5;
+}
+
+.pricing-card-2 .table-list span svg{
+    margin-right: 10px;
+}
+
+.pricing-card-2 .table-list span svg{
+    color: green;
+}
+
+
+/* list */

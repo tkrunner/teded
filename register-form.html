@@ -36,51 +36,51 @@
 <body>
 
 
-    <!-- logo login start-->
-    <div class="bg-toptab">
-        <div class="toptab">
-            <div class="toptab-left"><a href="#"><img class="logo-img" src="img/logo.png" alt=""></a></div>
-            <div class="toptab-right">
+     <!-- logo login start-->
+  <div class="bg-toptab">
+    <div class="toptab">
+      <div class="toptab-left"><a href="#"><img class="logo-img" src="img/logo.png" alt=""></a></div>
+      <div class="toptab-right">
 
-                <div class="change-lang">
-                    <a href="#" class="change-lang-button">TH</a>
-                    <a href="#" class="change-lang-button">EN</a>
-                </div>
-                <a class="login-button" onclick="document.getElementById('login').style.display='block'">LOGIN</a>
-
-                <div id="login" class="modal">
-
-                    <form class="modal-content animate" action="/action_page.php" method="post">
-                        <div class="imgcontainer">
-                            <span onclick="document.getElementById('login').style.display='none'" class="close"
-                                title="Close Modal">&times;</span>
-                            <img src="img/img_avatar2.png" alt="" class="avatar">
-                        </div>
-
-                        <div class="login-container">
-                            <label for="uname"><b>Username</b></label>
-                            <input type="text" class="usn-login" placeholder="Enter Username" name="uname" required>
-
-                            <label for="psw"><b>Password</b></label>
-                            <input type="password" class="psw-login" placeholder="Enter Password" name="psw" required>
-
-                            <button type="submit" class="submit-login">Login</button>
-                            <label>
-                                <input type="checkbox" checked="checked" name="remember"> Remember me
-                            </label>
-                        </div>
-
-                        <div class="foot-container" style="background-color:#f1f1f1">
-                            <span class="psw">Forgot <a href="#">password?</a></span>
-                        </div>
-                    </form>
-                </div>
-                <a href="register.html" class="regis-button">REGISTER</a>
-
-            </div>
+        <div class="change-lang">
+          <a href="#" class="change-lang-button">TH</a>
+          <a href="#" class="change-lang-button">EN</a>
         </div>
+        <a class="login-button" onclick="document.getElementById('login').style.display='block'">ล็อกอิน</a>
+
+        <div id="login" class="modal">
+
+          <form class="modal-content animate" action="edit-zean-home.html" method="">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('login').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+              <img src="img/img_avatar2.png" alt="" class="avatar">
+            </div>
+
+            <div class="login-container">
+              <label for="uname"><b>ชื่อผู้ใช้</b></label>
+              <input type="text" class="usn-login" placeholder="กรอกชื่อผู้ใช้" name="uname" required>
+
+              <label for="psw"><b>รหัสผ่าน</b></label>
+              <input type="password" class="psw-login" placeholder="กรอกรหัสผ่าน" name="psw" required>
+
+              <button type="submit" class="submit-login">ล็อกอิน</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> จดจำฉันไว้ในระบบ
+              </label>
+            </div>
+
+            <div class="foot-container" style="background-color:#f1f1f1">
+              <span class="psw">ลืม <a href="#">รหัสผ่าน?</a></span>
+            </div>
+          </form>
+        </div>
+        <a href="register.html" class="regis-button">สมัครสมาชิก</a>
+
+      </div>
     </div>
-    <!-- logo login end-->
+  </div>
+  <!-- logo login end-->
 
 
   <!-- navbar start-->
@@ -112,8 +112,20 @@
         <a href="bundle-ranking.html">Bundle Ranking</a>
         <a href="premium-ranking.html">Premium Ranking</a>
       </div>
+     
     </div>
-
+    <a href="#">
+      ข่าวสาร
+    </a>
+    <a href="#">
+      บทวิเคราะห์
+    </a>
+    <a href="#">
+      เกี่ยวกับเรา
+    </a>
+    <a href="#">
+      ติดต่อเรา
+    </a>
 
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
@@ -142,15 +154,15 @@
     <!-- container start-->
     <div class="container-regis">
         <form class="formregis" action="/action_page.php">
-              <h2>PERSONAL INFORMATION</h2>
-              <p>Please fill in this form to create an account.</p>
+              <h2>ข้อมูลส่วนตัว</h2>
+              <p>กรุณากรอกข้อมูลในช่องว่างเพื่อสมัครสมาชิก</p>
               <hr>
           
-              <label for="uame"><b>NAME : </b></label>
-              <input type="text" placeholder="Enter Name" name="uname" id="uname" required> 
+              <label for="uame"><b>ชื่อ : </b></label>
+              <input type="text" placeholder="กรอกชื่อ" name="uname" id="uname" required> 
           
-              <label for="lname"><b>LASTNAME : </b></label>
-              <input type="text" placeholder="Enter Lastname" name="lname" id="lname" required> 
+              <label for="lname"><b>นามสกุล : </b></label>
+              <input type="text" placeholder="กรอกนามสกุล" name="lname" id="lname" required> 
 
               <label for="bank"><b>บัญชีธนาคาร (ชื่อต้องตรงกับบัญชี) : </b></label>
               <select name="bank" id="bank">
@@ -163,36 +175,35 @@
               <label for="banknum"><b>เลขบัญชี :</b></label>
               <input type="text" placeholder="กรอกเลขบัญชี" name="banknum" id="banknum" required>
 
-              <label for="birthdate"><b>DATE OF BIRTH :</b></label>
+              <label for="birthdate"><b>วัน เดือน ปี เกิด :</b></label>
               <input type="date" name="birthdate" id="birthdate" required>
 
-              <label for="email"><b>EMAIL :</b></label>
-              <input type="email" placeholder="Enter Email" name="email" id="email" required>
+              <label for="email"><b>อีเมล :</b></label>
+              <input type="email" placeholder="กรอกอีเมล" name="email" id="email" required>
 
-              <label for="phone"><b>MOBILE NO :</b></label>
-              <input type="tel" placeholder="Enter Mobile number" name="phone" id="phone" required>
+              <label for="phone"><b>หมายเลขโทรศัพท์ :</b></label>
+              <input type="tel" placeholder="กรอกหมายเลขโทรศัพท์" name="phone" id="phone" required>
 
-              <label for="lineid"><b>LINE ID :</b></label>
-              <input type="text" placeholder="Enter Line ID" name="lineid" id="lineid" required>
+              <label for="lineid"><b>ไลน์ไอดี :</b></label>
+              <input type="text" placeholder="กรอกไลน์ไอดี" name="lineid" id="lineid" required>
 
-              <label for="gender"><b>GENDER :</b></label>
+              <label for="gender"><b>เพศ :</b></label>
               <select name="gender" id="gender">
                 <option value="#">----- เลือกเพศ -----</option>
                 <option value="#">ชาย</option>
                 <option value="#">หญิง</option>
               </select>
 
-                <h2>ACCOUNT INFORMATION</h2>
-                <label for="psw"><b>Password :</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                <h2>ข้อมูลแอคเคท์</h2>
+                <label for="psw"><b>รหัสผ่าน :</b></label>
+                <input type="password" placeholder="กรอกรหัสผ่าน" name="psw" id="psw" required>
 
-                <label for="psw-repeat"><b>Repeat Password :</b></label>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-              <hr>
+                <label for="psw-repeat"><b>ยืนยันรหัสผ่าน :</b></label>
+                <input type="password" placeholder="กรอกรหัสผ่านอีกครั้ง" name="psw-repeat" id="psw-repeat" required>
           
               <button type="submit" class="registerbtn">Register</button>
 
-              <p>Already have an account? <a class="login-button" onclick="document.getElementById('login').style.display='block'">Login</a>.</p>
+              <p>มีบัญชีอยู่แล้ว?  <a class="login-button" onclick="document.getElementById('login').style.display='block'">ล็อกอิน</a></p>
 
           </form>
 
@@ -200,67 +211,58 @@
     <!-- container end -->
 
     <!-- footer -->
-    <footer>
-        <div class="footer">
-            <div class="footer-desc">
-                <a href=""><img class="logo-img-footer" src="img/logo.png" alt=""></a>
-                <div>เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zeanเว็บ
-                    teded
-                    zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean</div>
-            </div>
+  <footer>
+    <div class="footer">
+      <div class="footer-desc">
+        <a href=""><img class="logo-img-footer" src="img/logo.png" alt=""></a>
+        <div>เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zeanเว็บ teded
+          zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean</div>
+      </div>
 
-            <div class="footer-link">
-                <div>
-                    <p>USEFUL LINKS</p>
-                    <ul>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p>Zean</p>
-                    <ul>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p>OPPORTUNITY</p>
-                    <ul>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p>TEDED ZEAN</p>
-                    <ul>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p>CUSTOMER SUPPORT</p>
-                    <ul>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                        <li><a href="#">ยูฟ่าเบท</a></li>
-                    </ul>
-                </div>
-
-            </div>
+      <div class="footer-link">
+        <div>
+          <p>USEFUL LINKS</p>
+          <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="news.html">ข่าวสาร</a></li>
+            <li><a href="about-us.html">เกี่ยวกับเรา</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>Zean</p>
+          <ul>
+            <li><a href="free-ranking.html">Free Ranking</a></li>
+            <li><a href="bundle-ranking.html">Bundle Ranking</a></li>
+            <li><a href="premium-ranking.html">Premium Ranking</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>OPPORTUNITY</p>
+          <ul>
+            <li><a href="analytic.html">บทวิเคราะห์</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>TEDED ZEAN</p>
+          <ul>
+            <li><a href="free-teded.html">Free Teded</a></li>
+            <li><a href="bundle-teded.html">Bundle Teded</a></li>
+            <li><a href="premium-teded.html">Premium Teded</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>CUSTOMER SUPPORT</p>
+          <ul>
+            <li><a href="contact-us.html">ติดต่อเรา</a></li>
+            <li><a href="about-us.html">เกี่ยวกับเรา</a></li>
+          </ul>
         </div>
 
-    </footer>
-    <!-- footer -->
+      </div>
+    </div>
+
+  </footer>
+  <!-- footer -->
 
     <script>
         function myFunction() {

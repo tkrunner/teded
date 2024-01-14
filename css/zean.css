@@ -18,7 +18,7 @@
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 840px) {
 
     .container-back-left {
         width: 100%;
@@ -34,6 +34,12 @@
         padding: 40px 20px !important;
     }
 
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background-color: #e5e5e5;
 }
 
 .container-main-zean {
@@ -109,7 +115,7 @@
 .tip-win-profit div {
     padding: 15px 20px 0px 20px;
     font-weight: 600;
-    line-height: 10px;
+    line-height: 4px;
 }
 
 .tip-win-profit-detail span {
@@ -130,12 +136,13 @@
 }
 
 .icon-menu {
-    width: 70px;
+    width: 80px;
     font-size: 12px;
     margin: 1px 1px;
-    padding: 10px 10px;
+    padding: 10px 5px;
     text-decoration: none;
     color: black;
+    line-height: 1;
 }
 
 .icon-menu:hover {
@@ -152,8 +159,8 @@
 }
 
 .icon-menu svg {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 
 /* menuzean */
@@ -175,22 +182,33 @@ textarea[id=performance] {
     padding: 12px 20px;
     margin: 20px 0;
     display: inline-block;
-    border: 1px solid #ccc;
     box-sizing: border-box;
-    background-color: #089216;
+    background-image: var(--color-bg-img);
     color: white;
     font-weight: 600;
-    border-radius: 10px;
+    border-radius: 10px;   
     cursor: pointer;
+}
+.container-main-zean input[type=submit]:hover{
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.363);
 }
 
 .runningtips {
     width: 100%;
     border-collapse: collapse;
     margin: 0;
-    background-color: var(--color-main);
+    background-image: var(--color-bg-img);
     border-radius: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+.runningtips .analytic{
+    resize: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 150px;
+    font-family: 'sarabun', sans-serif;
+    color: black;
 }
 
 @media screen and (max-width: 600px) {
@@ -285,20 +303,21 @@ textarea[id=performance] {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 @media screen and (max-width:600px) {
-    .formteded-edit{
+    .formteded-edit {
         width: 80%;
     }
+
     .formteded-edit input[id=bettingprice],
-.formteded-edit input[id=oddprice],
-.formteded-edit input[id=price],
-.formteded-edit textarea[id=analytic] ,
-.formteded-edit select[id=team1],
-.formteded-edit select[id=team2],
-.formteded-edit select[id=bettingtype]
-{
-    width: 60%;
-}
+    .formteded-edit input[id=oddprice],
+    .formteded-edit input[id=price],
+    .formteded-edit textarea[id=analytic],
+    .formteded-edit select[id=team1],
+    .formteded-edit select[id=team2],
+    .formteded-edit select[id=bettingtype] {
+        width: 60%;
+    }
 }
 
 /* home */
@@ -579,6 +598,21 @@ select[id=gender] {
     }
 }
 
+.withdraw-history-table #success{
+    color: #016204;
+    font-weight: 600;
+
+}
+
+.withdraw-history-table #cancel{
+    color: rgb(255, 3, 3);
+    font-weight: 600;
+}
+.withdraw-history-table #waiting{
+    color: rgb(13, 51, 175);
+    font-weight: 600;
+}
+
 /* withdraw history */
 
 /* predict history */
@@ -589,7 +623,7 @@ select[id=gender] {
     border-radius: 10px;
     width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
-    
+
 }
 
 .predict-history-table th {
@@ -617,11 +651,23 @@ select[id=gender] {
     margin: 0;
     border-radius: 10px;
 }
+
 @media screen and (max-width:600px) {
-    .predict-history-table{
+    .predict-history-table {
         display: block;
         overflow: scroll;
     }
+}
+
+.predict-history-table #win{
+    color: #016204;
+    font-weight: 600;
+
+}
+
+.predict-history-table #lose{
+    color: rgb(255, 3, 3);
+    font-weight: 600;
 }
 
 /* predict history */

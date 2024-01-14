@@ -6,6 +6,12 @@
 
 }
 
+hr {
+    height: 1px;
+    border: none;
+    background-color: #e5e5e5;
+}
+
 .container-back-left {
     width: 400px;
     margin-right: 5px;
@@ -114,12 +120,13 @@
 }
 
 .icon-menu {
-    width: 70px;
+    width: 80px;
     font-size: 12px;
     margin: 1px 1px;
-    padding: 10px 10px;
+    padding: 10px 5px;
     text-decoration: none;
     color: black;
+    line-height: 1;
 }
 
 .icon-menu:hover {
@@ -136,8 +143,8 @@
 }
 
 .icon-menu svg {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 
 /* menuuser */
@@ -179,12 +186,12 @@
 }
 
 .win-draw-lose #Win {
-    color: #07e01d;
+    color: var(--color-main);
     padding: 0px 10px;
 }
 
 .win-draw-lose #Draw {
-    color: #ffbb00;
+    color: var(--color-link);
     padding: 0px 10px;
 }
 
@@ -204,10 +211,11 @@
 }
 
 .follow-bt {
-    background-color: #ffbb0000;
-    fill: #0A4700;
+    background-color: #ffffff;
+    fill: var(--color-main);
+    color: var(--color-main);
     font-weight: 600;
-    border: 3px solid #0A4700;
+    border: 3px solid var(--color-main);
     border-radius: 10px;
     padding: 5px 10px;
     cursor: pointer;
@@ -215,20 +223,22 @@
 }
 
 .follow-bt:hover {
-    background-color: #0A4700;
+    background-color: var(--color-main);
     fill: white;
+    color: white;
 }
 
-.follow-bt.active{
+.follow-bt.active {
     fill: white;
-    background-color: #0A4700;
-} 
+    color: var(--color-main);
+    background-color: var(--color-main);
+}
 
 .profile-bt {
     background-color: #ffbb0000;
-    color: #96710c;
+    color: var(--color-link);
     font-weight: 600;
-    border: 3px solid #96710c;
+    border: 3px solid var(--color-link);
     border-radius: 10px;
     padding: 5px 5px;
     cursor: pointer;
@@ -236,7 +246,7 @@
 
 .profile-bt:hover {
     color: white;
-    background-color: #96710c;
+    background-color: var(--color-link);
 }
 
 /* topzean */
@@ -246,7 +256,7 @@
 .tip-followed-table {
     margin-top: 20px;
     width: 100%;
-    background-color: var(--color-main);
+    background-image: var(--color-bg-img);
     border-collapse: collapse;
     border-radius: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
@@ -261,12 +271,11 @@
 }
 
 .tip-followed-table th {
-    background-color: #09470000;
     color: white;
     padding: 10px 4px 10px 4px;
     font-size: 14px;
     white-space: nowrap;
-    
+
 }
 
 .tip-followed-table td {
@@ -423,10 +432,11 @@ select[id=gender] {
     border-radius: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
 }
-@media screen and (max-width: 840px){
-    .favourite-zean-table{
+
+@media screen and (max-width: 840px) {
+    .favourite-zean-table {
         display: flex;
-    overflow: scroll;
+        overflow: scroll;
     }
 }
 
@@ -519,10 +529,10 @@ select[id=gender] {
 
 .teded-history-table td {
     background-color: #EDEDED;
-    padding: 5px 10px 5px 10px;
+    padding: 10px 10px 10px 10px;
     border: 0px;
     color: black;
-    font-size: 12px;
+    font-size: 13px;
     text-align: center;
     border-bottom: 1px solid rgb(255, 255, 255);
     white-space: nowrap;
@@ -544,6 +554,18 @@ select[id=gender] {
     }
 
 
+}
+
+.teded-history-table #date,
+.teded-history-table #event,
+.teded-history-table #type,
+.teded-history-table #zean,
+.teded-history-table #result,
+.teded-history-table #analytic,
+.teded-history-table #odd,
+.teded-history-table #price
+{
+padding: 10px 0px;
 }
 
 /* teded history*/
@@ -577,14 +599,31 @@ select[id=gender] {
     border-bottom: 1px solid rgb(255, 255, 255);
     white-space: nowrap;
 }
+
 @media screen and (max-width: 840px) {
     .withdraw-history-table th {
         font-size: 14px;
     }
-    .withdraw-history-table td{
+
+    .withdraw-history-table td {
         font-size: 12px;
         padding: 10px 20px 10px 20px;
     }
+}
+
+.withdraw-history-table #success{
+    color: #016204;
+    font-weight: 600;
+
+}
+
+.withdraw-history-table #cancel{
+    color: rgb(255, 3, 3);
+    font-weight: 600;
+}
+.withdraw-history-table #waiting{
+    color: rgb(13, 51, 175);
+    font-weight: 600;
 }
 
 /* withdraw-history */

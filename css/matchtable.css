@@ -1,50 +1,59 @@
 /* matchtable start*/
-.match-table{
+.match-table {
     padding: 40px 40px 100px 40px;
 }
 
-.icon-link{
-    width: 40px;
-    height: 30px;
+.icon-link {
+    width: 35px;
+    height: 35px;
+    background-color: rgb(231, 231, 231);
+    padding: 10px;
+    border-radius: 50px;
 }
 
-.icon-league{
+.icon-link:hover {
+    background-color: rgb(124, 124, 124);
+    
+}
+
+.icon-league {
     width: 20px;
     height: 30px;
 }
 
-.icon-frag{
+.icon-frag {
     width: 40px;
     height: 25px;
 }
 
-.match-header{
-    background-color: var(--color-main);
-    padding:10px 15px;
+.match-header {
+    background-image: var(--color-bg-img);
+    padding: 10px 15px;
     text-align: left;
     font-size: 16px;
     font-weight: 600;
     color: white;
     display: flex;
-    border-radius: 20px;
+    border-radius: 10px;
     align-items: center;
 }
 
-.datepicker-search{
+.datepicker-search {
     width: 50%;
-  display: flex;
-  flex-direction :row;
-  justify-content: flex-end;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
 }
-.match-header span{
+
+.match-header span {
     width: 50%;
 }
 
-.league-name{
-    background-color: var(--color-main);
+.league-name {
+    background-image: var(--color-bg-img);
     display: flex;
-    padding:10px 15px;
+    padding: 10px 15px;
     align-items: center;
     font-size: 16px;
     font-weight: 600;
@@ -53,84 +62,92 @@
     border-radius: 10px 10px 0px 0px;
 }
 
-.league-name p{
+.league-name p {
     margin: 0px 15px;
-    
+
 }
 
-table{
+table {
     width: 100%;
-    background-color: rgb(18, 49, 0);
+    border: none;
     border-collapse: collapse;
-    border: 1px solid var(--color-main);
+    background-color: white;
+
 }
+
 .league-match {
-   width: 100%;
-   background-color: var(--color-main);
-   
-}
-.league-match th{
+    width: 100%;
     background-color: var(--color-main);
+
+
+}
+
+.league-match th {
+    background-color: #096400;
     color: white;
     padding: 8px 0px;
     font-size: 14px;
-    border: 1px solid rgb(0, 100, 22);
-    background-image: linear-gradient(180deg,#003806 60%,#002e05 80%,#001d03 100%);
-    border-radius: 4px;
-    
+
+
+
+}
+
+table td {
+    padding: 10px 0px;
+    border-bottom: 1px solid #b9b9b9;
 }
 
 
-tr:nth-child(even){
-    background-color: var(--color-second);
-
-}  
-tr:nth-child(odd){
-    background-color: var(--color-main);
-    color: white;
-}  
-
-
-
-
 @media screen and (max-width: 840px) {
-    #time,#flag,#live,#price,#first-half,#result,#teded,#live-link{
+
+    #time,
+    #flag,
+    #live,
+    #price,
+    #first-half,
+    #result,
+    #teded,
+    #live-link {
         padding: 0px 20px;
         white-space: nowrap;
-        
+
     }
-    #host,#team-sec{
+
+    #host,
+    #team-sec {
         padding: 10px 80px;
         white-space: nowrap;
     }
-    table{
+
+    table {
         display: block;
-   overflow: scroll;
+        overflow: scroll;
     }
 
-    .match-table{
+    .match-table {
         padding: 40px 15px 100px 15px;
     }
-    .match-header{
+
+    .match-header {
         font-size: 12px;
         line-height: 20px;
     }
 
 }
 
-.datepicker-search input{
-    border-radius: 20px;
+.datepicker-search input {
+    border-radius: 8px;
     padding: 5px;
 }
 
-.datepicker-search button{
+.datepicker-search button {
     border-radius: 20px;
     padding: 5px 10px;
     border: 1px solid rgb(0, 0, 0);
     background-color: white;
 }
 
-.datepicker-search button:hover{
+.datepicker-search button:hover {
     background-color: rgb(211, 211, 211);
     cursor: pointer;
 }

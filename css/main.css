@@ -5,7 +5,18 @@
   --color-second: #79AF70;
   --color-foot: rgb(0, 32, 4);
   --color-link: #FFC01F;
+  --color-third: #0a7c00;
+  --color-bg-img: linear-gradient( 135deg, #0d5003 10%, #242424 100%);
+  --color-bg-img-second: linear-gradient( 135deg, #edffea 10%, #78cc69 100%);
 
+}
+
+button ,textarea{
+  font-family: 'sarabun';
+}
+
+input{
+  outline:none
 }
 
 td .fa-caret-up {
@@ -28,11 +39,11 @@ body {
 .container {
   display: block;
   max-width: 1400px;
-  margin: 0px auto;
+  margin: 50px auto;
   text-align: center;
   background-color: rgb(228, 228, 228);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-
+  border-radius: 20px;
 }
 
 .container-main {
@@ -111,6 +122,7 @@ body {
 
 }
 
+
 .side-creditpack ul {
   display: block;
   margin: 0;
@@ -124,19 +136,11 @@ body {
   height: 100px;
   margin: 0px 0px 15px 0px;
   overflow: hidden;
-  background: #efefef;
+  background-color: #fffbe7;
   position: relative;
   border: solid 1px #eaeaea;
   box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
   border-radius: 15px 15px 15px 15px;
-  -o-border-radius: 15px 15px 15px 15px;
-  -moz-border-radius: 15px 15px 15px 15px;
-  -webkit-border-radius: 15px 15px 15px 15px;
-  -ms-border-radius: 15px 15px 15px 15px;
 }
 
 .side-creditpack ul li:last-child {
@@ -147,24 +151,16 @@ body {
   display: block;
   position: absolute;
   width: 100%;
-  height: 28px;
-  bottom: 10px;
+  height: 30px;
+  bottom: 0px;
   left: 0%;
-  background: #016204;
+  background: #fffbe7;
   transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-  -moz-transition: all 0.6s ease;
-  -webkit-transition: all 0.6s ease;
-  -ms-transition: all 0.6s ease;
 }
 
 .side-creditpack li:hover span.cp-left {
   left: -100%;
-  transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-  -moz-transition: all 0.6s ease;
-  -webkit-transition: all 0.6s ease;
-  -ms-transition: all 0.6s ease;
+  transition: ease 0.6 all;
 }
 
 .side-creditpack li span.cp-right {
@@ -176,19 +172,11 @@ body {
   left: 100%;
   overflow: hidden;
   transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-  -moz-transition: all 0.6s ease;
-  -webkit-transition: all 0.6s ease;
-  -ms-transition: all 0.6s ease;
 }
 
 .side-creditpack li:hover span.cp-right {
   left: 0%;
   transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-  -moz-transition: all 0.6s ease;
-  -webkit-transition: all 0.6s ease;
-  -ms-transition: all 0.6s ease;
 }
 
 .side-creditpack li span.cp-left div.h1 {
@@ -197,9 +185,9 @@ body {
   font-family: 'Sarabun', sans-serif;
   font-weight: 600;
   font-size: 4vh;
-  color: #ffac1a;
+  color: var(--color-link);
   bottom: 0;
-  left: 15px;
+  left: 20%;
   z-index: 1;
 }
 
@@ -208,7 +196,7 @@ body {
   font-family: 'Sarabun', sans-serif;
   text-transform: uppercase;
   font-size: 12px;
-  color: #ffffff;
+  color: var(--color-link);
   margin: 0px 0px 0px 5px;
 }
 
@@ -224,12 +212,8 @@ body {
   font-weight: 600;
   font-size: 2vh;
   text-transform: uppercase;
-  color: #000000;
+  color: black;
   box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
 }
 
 .side-creditpack li span.cp-right p {
@@ -258,10 +242,6 @@ body {
   border: solid 2px var(--color-main);
   color: var(--color-main);
   border-radius: 10px;
-  -o-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -ms-border-radius: 10px;
 }
 
 .side-creditpack li span.cp-right a:hover {
@@ -282,6 +262,20 @@ body {
     font-size: 8vh;
   }
 
+}
+
+.ribbon {
+  width: 200px;
+  background-color: var(--color-main);
+  font-size: 0.918rem;
+  text-align: center;
+  padding: 8px 0;
+  color: #ffffff;
+  position: absolute;
+  transform: rotate(-45deg);
+  top: -50px;
+  right: 100px;
+  font-weight: 600;
 }
 
 /* credit */
@@ -326,7 +320,7 @@ footer {
   justify-content: center;
   color: var(--color-link);
   font-weight: 600;
-
+  line-height: 2;
 }
 
 .footer-link ul {
@@ -361,3 +355,4 @@ footer {
 }
 
 /* footer end*/
+

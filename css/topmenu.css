@@ -146,7 +146,9 @@ input[class=psw-login] {
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
-  border-radius: 20px;
+  border-radius: 10px;
+  outline: none;
+  font-family: 'sarabun',sans-serif;
 }
 
 
@@ -157,11 +159,12 @@ button[class=submit-login] {
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
   cursor: pointer;
   width: 80%;
   font-weight: 600;
   justify-content: center;
+  font-family: 'sarabun',sans-serif;
 }
 
 button:hover {
