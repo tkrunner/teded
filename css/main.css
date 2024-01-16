@@ -77,6 +77,11 @@ body {
   margin-right: 5px;
 }
 
+.container-body{
+  padding: 50px 50px;
+  text-align: left;
+}
+
 .container-credit {
   width: 20%;
   margin-left: 5px;
@@ -334,6 +339,7 @@ footer {
   text-align: center;
   align-items: center;
   padding: 15px;
+  line-height: 1.5;
 }
 
 
@@ -368,7 +374,7 @@ footer {
 
 .logo-img-footer {
   width: 400px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 
