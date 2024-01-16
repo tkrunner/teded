@@ -65,6 +65,24 @@
     z-index: 9;
 }
 
+.regis-button-zean{
+    background-color: var(--color-main);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.regis-button-user{
+    background-color: var(--color-link);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
 @media screen and (max-width: 600px) {
 
     .center-img {

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>REGISTER</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- css main -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- css main -->
+
+    <!-- css navbar -->
+    <link rel="stylesheet" href="css/navbar.css">
+    <!-- css navbar -->
+
+    <!-- css topmenu -->
+    <link rel="stylesheet" href="css/topmenu.css">
+    <!-- css topmenu -->
+
+    <!-- css top-img -->
+    <link rel="stylesheet" href="css/topimg.css">
+    <!-- css top-img -->
+
+    <!-- css reg -->
+    <link rel="stylesheet" href="css/reg.css">
+    <!-- css reg -->
+
+</head>
+
+<body>
+
+
+     <!-- logo login start-->
+  <div class="bg-toptab">
+    <div class="toptab">
+      <div class="toptab-left"><a href="#"><img class="logo-img" src="img/logo2.png" alt=""></a></div>
+      <div class="toptab-right">
+
+        <div class="change-lang">
+          <a href="#" class="change-lang-button">TH</a>
+          <a href="#" class="change-lang-button">EN</a>
+        </div>
+        <a class="login-button" onclick="document.getElementById('login').style.display='block'">ล็อกอิน</a>
+
+        <div id="login" class="modal">
+
+          <form class="modal-content animate" action="edit-zean-home.html" method="">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('login').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+              <img src="img/img_avatar2.png" alt="" class="avatar">
+            </div>
+
+            <div class="login-container">
+              <label for="uname"><b>ชื่อผู้ใช้</b></label>
+              <input type="text" class="usn-login" placeholder="กรอกชื่อผู้ใช้" name="uname" required>
+
+              <label for="psw"><b>รหัสผ่าน</b></label>
+              <input type="password" class="psw-login" placeholder="กรอกรหัสผ่าน" name="psw" required>
+
+              <button type="submit" class="submit-login">ล็อกอิน</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> จดจำฉันไว้ในระบบ
+              </label>
+            </div>
+
+            <div class="foot-container" style="background-color:#f1f1f1">
+              <span class="psw">ลืม <a href="#">รหัสผ่าน?</a></span>
+            </div>
+          </form>
+        </div>
+        <a href="register.html" class="regis-button">สมัครสมาชิก</a>
+
+      </div>
+    </div>
+  </div>
+  <!-- logo login end-->
+
+
+  <!-- navbar start-->
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">
+      <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+        viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+        <path fill="rgb(255, 255, 255)"
+          d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+      </svg>
+    </a>
+
+    <div class="dropdown">
+      <button class="dropbtn">Teded
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="free-teded.html">Free Teded</a>
+        <a href="bundle-teded.html">Bundle Teded</a>
+        <a href="premium-teded.html">Premium Teded</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Ranking
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="free-ranking.html">Free Ranking</a>
+        <a href="bundle-ranking.html">Bundle Ranking</a>
+        <a href="premium-ranking.html">Premium Ranking</a>
+      </div>
+     
+    </div>
+    <a href="#">
+      ข่าวสาร
+    </a>
+    <a href="#">
+      บทวิเคราะห์
+    </a>
+    <a href="#">
+      เกี่ยวกับเรา
+    </a>
+    <a href="#">
+      ติดต่อเรา
+    </a>
+
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  <!-- navbar end-->
+
+    
+    <!-- top img start-->
+    <div class="top-img">
+        <div class="cover-img">
+            <img class="center-img" src="img/Layer 38.png" alt="">
+        </div>
+        <div class="soccer-img">
+            <div><img class="left-img" src="img/soc.png" alt=""></div>
+            <div><img class="right-img" src="img/cer.png" alt=""></div>
+        </div>
+        <div class="buttons">
+            <a href="register.html" class="regis-button">REGISTER</a>
+        </div>
+
+
+
+    </div>
+    <!-- top img end-->
+
+
+    <!-- container start-->
+    <div class="container-regis">
+        <form class="formregis" action="/action_page.php">
+              <h2>ข้อมูลส่วนตัว</h2>
+              <p>กรุณากรอกข้อมูลในช่องว่างเพื่อสมัครสมาชิก</p>
+              <hr>
+          
+              <label for="uame"><b>ชื่อ : </b></label>
+              <input type="text" placeholder="กรอกชื่อ" name="uname" id="uname" required> 
+          
+              <label for="lname"><b>นามสกุล : </b></label>
+              <input type="text" placeholder="กรอกนามสกุล" name="lname" id="lname" required> 
+
+              <label for="bank"><b>บัญชีธนาคาร (ชื่อต้องตรงกับบัญชี) : </b></label>
+              <select name="bank" id="bank">
+                <option value="#">----- เลือกบัญชีธนาคาร -----</option>
+                <option value="#">ธนาคารกสิกรไทย</option>
+                <option value="#">ธนาคารทหารไทย</option>
+                <option value="#">ธนาคารกรุงเทพ</option>
+              </select>
+
+              <label for="banknum"><b>เลขบัญชี :</b></label>
+              <input type="text" placeholder="กรอกเลขบัญชี" name="banknum" id="banknum" required>
+
+              <label for="birthdate"><b>วัน เดือน ปี เกิด :</b></label>
+              <input type="date" name="birthdate" id="birthdate" required>
+
+              <label for="email"><b>อีเมล :</b></label>
+              <input type="email" placeholder="กรอกอีเมล" name="email" id="email" required>
+
+              <label for="phone"><b>หมายเลขโทรศัพท์ :</b></label>
+              <input type="tel" placeholder="กรอกหมายเลขโทรศัพท์" name="phone" id="phone" required>
+
+              <label for="lineid"><b>ไลน์ไอดี :</b></label>
+              <input type="text" placeholder="กรอกไลน์ไอดี" name="lineid" id="lineid" required>
+
+              <label for="gender"><b>เพศ :</b></label>
+              <select name="gender" id="gender">
+                <option value="#">----- เลือกเพศ -----</option>
+                <option value="#">ชาย</option>
+                <option value="#">หญิง</option>
+              </select>
+
+                <h2>ข้อมูลแอคเคท์</h2>
+                <label for="psw"><b>รหัสผ่าน :</b></label>
+                <input type="password" placeholder="กรอกรหัสผ่าน" name="psw" id="psw" required>
+
+                <label for="psw-repeat"><b>ยืนยันรหัสผ่าน :</b></label>
+                <input type="password" placeholder="กรอกรหัสผ่านอีกครั้ง" name="psw-repeat" id="psw-repeat" required>
+          
+              <button type="submit" class="registerbtn">Register</button>
+
+              <p>มีบัญชีอยู่แล้ว?  <a class="login-button" onclick="document.getElementById('login').style.display='block'">ล็อกอิน</a></p>
+
+          </form>
+
+    </div>
+    <!-- container end -->
+
+    <!-- footer -->
+  <footer>
+    <div class="footer">
+      <div class="footer-desc">
+        <a href=""><img class="logo-img-footer" src="img/logo2.png" alt=""></a>
+        <div>เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zeanเว็บ teded
+          zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean เว็บ teded zean</div>
+      </div>
+
+      <div class="footer-link">
+        <div>
+          <p>USEFUL LINKS</p>
+          <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="news.html">ข่าวสาร</a></li>
+            <li><a href="about-us.html">เกี่ยวกับเรา</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>Zean</p>
+          <ul>
+            <li><a href="free-ranking.html">Free Ranking</a></li>
+            <li><a href="bundle-ranking.html">Bundle Ranking</a></li>
+            <li><a href="premium-ranking.html">Premium Ranking</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>OPPORTUNITY</p>
+          <ul>
+            <li><a href="analytic.html">บทวิเคราะห์</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>TEDED ZEAN</p>
+          <ul>
+            <li><a href="free-teded.html">Free Teded</a></li>
+            <li><a href="bundle-teded.html">Bundle Teded</a></li>
+            <li><a href="premium-teded.html">Premium Teded</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>CUSTOMER SUPPORT</p>
+          <ul>
+            <li><a href="contact-us.html">ติดต่อเรา</a></li>
+            <li><a href="about-us.html">เกี่ยวกับเรา</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+  <!-- footer -->
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        // Get the modal
+        var modal = document.getElementById('login');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

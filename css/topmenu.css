@@ -1,6 +1,8 @@
 /* toptap begin*/
 .logo-img {
   width: 300px;
+  padding: 0;
+  padding-top: 10px;
 }
 
 .toptab {
@@ -10,7 +12,49 @@
   padding: 10px 0px;
   max-width: 1400px;
   background-color: white;
+  
+}
+.block-login .profile-img{
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  padding-right: 20px;
+}
 
+.block-login{
+  margin-left: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  padding: 5px 10px;
+  width: 100%;
+  max-width: 200px;
+}
+
+.block-profile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.block-button{
+  display: flex;
+  justify-content: space-around;
+}
+
+.block-button .profile{
+  background-color: rgba(0, 0, 0, 0);
+  border:none;
+  padding: 5px 10px;
+  text-decoration: underline;
+  color: var(--color-main);
+  cursor: pointer;
+}
+.block-button .logout{
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 5px 10px;
+  text-decoration: underline;
+  color: red;
+  cursor: pointer;
 }
 
 .bg-toptab {
@@ -44,6 +88,11 @@
     text-align: center;
     margin: 5px auto;
     width: 70%;
+  }
+
+  .block-login{
+    max-width: none;
+    margin-left: 0;
   }
 
   .logo-img {
