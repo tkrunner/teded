@@ -93,7 +93,9 @@ body {
     flex-wrap: wrap;
     padding: 0px 15px;
   }
-
+  .container{
+    margin: 50px 15px;
+  }
   .container-ranking {
     flex-wrap: wrap;
     padding: 0px 15px;
